@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<!--[if IE 9]><html lang="ru-RU" class="no-js ie9"><![endif]-->
+<html lang="ru-RU" class="no-js">
+  <head>
+    <title>SAMSUNG Фирменные магазины</title>
+    <!--#include virtual="/views/layouts/_head.html" -->
+  </head>
+  <body>
+    
+    <!--#include virtual="/views/layouts/_alerts.html" -->
+    <!--#include virtual="/views/layouts/_header.html" -->
+    
+    <div class="promo m-b_6">
+      <div class="ctn">
+        <h3 class="promo_title">Выбери свой цвет</h3>
+        <p class="promo_text">Найди свой Samsung GALAXY SIII</p>
+        <a href="#" class="form_button">Подробнее</a>
+      </div>
+    </div>
+
+    <section class="units-slider-wrapper">
+      <header class="units-slider-header"><h3>Популярные товары</h3></header>
+      <section class="units-slider iosSlider">
+        <div class="slider">
+          <div class="slide">
+            <!--#include virtual="/views/units/_unit_new.html" --><!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit_discount.html" --><!--#include virtual="/views/units/_unit.html" -->
+          </div>
+          <div class="slide">
+            <!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit_discount.html" --><!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit_new.html" -->
+          </div>
+          <div class="slide">
+            <!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit_discount.html" --><!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit_new.html" -->
+          </div>
+          <div class="slide">
+            <!--#include virtual="/views/units/_unit_new.html" --><!--#include virtual="/views/units/_unit_discount.html" --><!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit.html" -->
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="units-slider-controls">
+          <div class="units-slider-control units-slider-control_prev" style="display: none;"></div>  
+          <div class="units-slider-control units-slider-control_next"></div>  
+        </div>
+        <nav class="units-slider-buls">
+          <span class="units-slider-buls_i units-slider-buls_i__current"></span>
+          <span href="#" class="units-slider-buls_i"></span>
+          <span href="#" class="units-slider-buls_i"></span>
+          <span href="#" class="units-slider-buls_i"></span>
+        </nav>
+      </footer>
+    </section>
+
+    <section class="map m-b_2">
+      <div class="ctn p-r">
+        <h3>Фирменная сеть магазинов Samsung</h3>
+        <img src="/img/map.png" alt="Фирменная сеть магазинов Samsung" class="map_img">
+      </div>
+    </section>
+
+    <section class="units-slider-wrapper m-b_2">
+      <header class="units-slider-header"><h3>Новые поступления</h3></header>
+      <section class="units-slider iosSlider">
+        <div class="slider">
+          <div class="slide">
+            <!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit_new.html" --><!--#include virtual="/views/units/_unit_discount.html" --><!--#include virtual="/views/units/_unit.html" -->
+          </div>
+          <div class="slide">
+            <!--#include virtual="/views/units/_unit_discount.html" --><!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit_new.html" --><!--#include virtual="/views/units/_unit.html" -->
+          </div>
+          <div class="slide">
+            <!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit_new.html" --><!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit_discount.html" -->
+          </div>
+          <div class="slide">
+            <!--#include virtual="/views/units/_unit.html" --><!--#include virtual="/views/units/_unit_discount.html" --><!--#include virtual="/views/units/_unit_new.html" --><!--#include virtual="/views/units/_unit.html" -->
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="units-slider-controls">
+          <div class="units-slider-control units-slider-control_prev" style="display: none;"></div>  
+          <div class="units-slider-control units-slider-control_next"></div>  
+        </div>
+        <nav class="units-slider-buls">
+          <span class="units-slider-buls_i units-slider-buls_i__current"></span>
+          <span href="#" class="units-slider-buls_i"></span>
+          <span href="#" class="units-slider-buls_i"></span>
+          <span href="#" class="units-slider-buls_i"></span>
+        </nav>
+      </footer>
+    </section>
+
+    <section id="section" class="section" role="main">
+      <div class="ctn">
+
+
+      </div>
+    </section>
+
+    <!--#include virtual="/views/layouts/_footer.html" -->
+    <!--#include virtual="/views/layouts/_dialogs.html" -->
+
+    <script type="text/javascript">
+      $(function() {
+        $('.units-slider-wrapper').each(function() {
+          var _this = $(this);
+          $(this).find('.units-slider').iosSlider({
+            snapToChildren: true,
+            snapSlideCenter: true,
+            navPrevSelector:  _this.find('.units-slider-control_prev'),
+            navNextSelector:  _this.find('.units-slider-control_next'),
+            navSlideSelector: _this.find('.units-slider-buls_i'),
+            onSlideComplete: function(args) {
+              _this.find('.units-slider-control_prev, .units-slider-control_next').show();
+              if(args.currentSlideNumber == 1) {
+                _this.find('.units-slider-control_prev').hide();
+              } else if(args.currentSliderOffset == args.data.sliderMax) {
+                _this.find('.units-slider-control_next').hide();
+              }
+            },
+            onSlideChange: function(args) {
+              _this.find('.units-slider-buls_i').removeClass('units-slider-buls_i__current');
+              _this.find('.units-slider-buls_i:eq(' + (args.currentSlideNumber - 1) + ')').addClass('units-slider-buls_i__current');
+            }
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>
