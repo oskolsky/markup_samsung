@@ -8,7 +8,17 @@ $(function() {
   $('.js-price-format').each(function() {
     var price = parseInt($(this).text()).formatMoney();
     $(this).text(price);
-  });  
+  });
+
+  // Insert img
+  $('.insert-img').each(function() {
+    var caption = $(this).attr('title');
+    if (caption) {
+      $(this).closest('p').addClass('p-r').css('z-index', '1000');
+      var tpl = '<div class="insert-img_caption">' + caption + '</div>'
+      $(this).after(tpl);
+    }
+  });
 
 });
 
