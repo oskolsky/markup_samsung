@@ -42,7 +42,7 @@
 /* HEADER
 ---------------------------------------------------------------------------------------------------- */
 .header {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   padding: 2rem 0;
 }
 
@@ -138,7 +138,7 @@
 /* MENU
 ---------------------------------------------------------------------------------------------------- */
 .menu {
-  margin-bottom: .7rem;
+  margin-bottom: 1rem;
   text-align: justify;
   text-align-last: justify;
 }
@@ -172,7 +172,39 @@
 /* SECTION
 ---------------------------------------------------------------------------------------------------- */
 .section {
+  box-shadow: inset 0 0 20px 2px #f3f3f3;
+  padding-top: 2rem;
+}
 
+/* BREAD-CRUMBS
+---------------------------------------------------------------------------------------------------- */
+.bread-crumbs {
+  height: 2rem;
+  line-height: 2rem;
+}
+  .bread-crumbs_i {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  .bread-crumbs_i:hover span {
+    color: #666;
+    text-decoration: none;
+  }
+    .bread-crumbs_i span {
+      color: #666;
+      text-decoration: underline;
+    }
+    .bread-crumbs_i:after {
+      color: #666;
+      content: '–';
+    }
+
+/* PAGE TITLE
+---------------------------------------------------------------------------------------------------- */
+.page-title {
+  height: 6rem;
+  line-height: 5rem;
 }
 
 /* FOOTER

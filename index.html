@@ -10,7 +10,7 @@
     <!--#include virtual="/views/layouts/_alerts.html" -->
     <!--#include virtual="/views/layouts/_header.html" -->
 
-    <section id="section" class="section" role="main">
+    <section id="section" role="main">
 
       <section class="promo m-b_6">
         <div class="ctn">
@@ -119,22 +119,10 @@
           <div class="cols">
             <div class="cols-4 mod news">
               <h3 class="m-b_2">Новости <!--#include virtual="/views/common/_social.html" --></h3>
-              <article class="news_i m-b_4">
-                <aside class="datetime">6 февраля 2013 г.</aside>
-                <h3 class="news_h"><a href="#">Новый фирменный магазин в ТРЦ «АУРА», г. Сургут</a></h3>
-                <p>Сеть фирменных магазинов Samsung сообщает об открытии нового магазина в ТРЦ "АУРА", г. Сургут.</p>
-              </article>
-              <article class="news_i m-b_4">
-                <aside class="datetime">6 февраля 2013 г.</aside>
-                <h3 class="news_h"><a href="#">Сервисное обслуживание Samsung признано лучшим в стране</a></h3>
-                <p>Samsung Russia Service стала лауреатом ежегодной национальной премии «Компания Года 2012» в номинации «Потребительские услуги. Высокое качество сервиса».</p>
-              </article>
-              <article class="news_i m-b_4">
-                <aside class="datetime">6 февраля 2013 г.</aside>
-                <h3 class="news_h"><a href="#">Новый фирменный магазин в ТРЦ «Красная площадь», в Краснодаре Сеть фирменных магази.</a></h3>
-                <p>Сеть фирменных магазинов Samsung сообщает об открытии нового магазина в ТРЦ «Красная площадь», г. Краснодар.</p>
-              </article>
-              <a href="#">Остальные новости</a>
+              <!--#include virtual="/views/news/_item.html" -->
+              <!--#include virtual="/views/news/_item.html" -->
+              <!--#include virtual="/views/news/_item.html" -->
+              <a href="/news.html">Остальные новости</a>
             </div><div class="cols-4 mod">
               <h3 class="m-b_2">Сеть фирменных магазинов Samsung</h3>
               <img src="/img/chain_stores.png" alt="Сеть фирменных магазинов Samsung" class="chain-stores-img">

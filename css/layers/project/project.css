@@ -79,6 +79,9 @@
     .news_i {
 
     }
+      .news_photo {
+        margin-bottom: .5rem;
+      }
       .news_h {
         margin-bottom: 1rem;;
       }
@@ -98,3 +101,9 @@
     .chain-stores_i {
       margin-bottom: 2rem;
     }
+
+/* NEWS PAGE
+---------------------------------------------------------------------------------------------------- */
+.news__index {
+
+}

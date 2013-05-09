@@ -218,3 +218,29 @@ a:hover, .a__inner:hover > span {text-decoration: underline;}*/
       position: absolute;
       z-index: 1001;
     }
+
+/* SHOW MORE
+---------------------------------------------------------------------------------------------------- */
+.show-more {
+  background: #f8f8f8;
+  border-radius: .5rem;
+  display: inline-block;
+  height: 3.3rem;
+  line-height: 3.3rem;
+  padding: 0 1.5rem;
+}
+  .show-more_a {
+    border-color: #333;
+    color: #333;
+    font-size: 1.2rem;
+  }
+  .show-more_a:hover {
+    border-color: #333;
+    color: #333;
+  }
+
+/* BORDERED
+---------------------------------------------------------------------------------------------------- */
+.bordered {
+  border: 1px solid #eaeaea;
+}
