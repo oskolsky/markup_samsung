@@ -14,8 +14,14 @@ $(function() {
   $('.insert-img').each(function() {
     var caption = $(this).attr('title');
     if (caption) {
-      $(this).closest('p').addClass('p-r').css('z-index', '1000');
-      var tpl = '<div class="insert-img_caption">' + caption + '</div>'
+      var data_location = $(this).attr('data-location');
+      if (data_location == 'side') {
+        var tpl = '<span class="insert-img_caption insert-img_caption__side">' + caption + '</span>';
+        $(this).closest('p').addClass('p-r').css({'z-index': '1000'});
+      } else if (data_location == 'center') {
+        var tpl = '<span class="insert-img_caption insert-img_caption__center">' + caption + '</span>';
+        $(this).closest('p').addClass('p-r').css({'text-align': 'center'});
+      }
       $(this).after(tpl);
     }
   });

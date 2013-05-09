@@ -199,6 +199,7 @@
     .bread-crumbs_i:after {
       color: #666;
       content: '–';
+      margin-left: .3rem;
     }
 
 /* PAGE TITLE

@@ -265,14 +265,21 @@ a:hover, .a__inner:hover > span {text-decoration: underline;}*/
 /* INSERT IMAGE
 ---------------------------------------------------------------------------------------------------- */
 .insert-img {
-
+  text-align: center;
 }
   .insert-img_caption {
     color: #666;
     font-size: 1.4rem;
     font-style: italic;
+  }
+  .insert-img_caption__side {
     position: absolute;
     right: -220px;
-    width: 200px;
     z-index: 1001;
+    width: 200px;
+  }
+  .insert-img_caption__center {
+    display: inline-block;
+    margin-top: 2rem;
+    text-align: center;
   }

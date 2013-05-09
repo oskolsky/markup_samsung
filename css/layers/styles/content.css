@@ -13,8 +13,8 @@
 .cnt > table {margin-bottom: 2rem;}
 
 /* Links */
-.cnt a       {color: mediumblue;}
-.cnt a:hover {color: gray;}
+.cnt a       {color: #00a7e0;}
+.cnt a:hover {color: #00a7e0;}
 
 /* Blockquote */
 .cnt > blockquote {
