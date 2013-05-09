@@ -53,7 +53,7 @@ h2 {
 }
 h3 {
   font-size: 3rem;
-  line-height: 1.125;
+  line-height: .9;
 }
 h4 {
   font-size: 2.5rem;
@@ -183,3 +183,20 @@ a:hover, .a__inner:hover > span {text-decoration: underline;}*/
 .a__pseudo.a__inner,
 .a__pseudo:hover,
 .a__pseudo.a__inner:hover > span {border-bottom-color: transparent;}*/
+
+/* DATETIME
+---------------------------------------------------------------------------------------------------- */
+.datetime {
+  color: #999;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+/* PRICE
+---------------------------------------------------------------------------------------------------- */
+.price:after {
+  content: 'руб.';
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-left: .5rem;
+}

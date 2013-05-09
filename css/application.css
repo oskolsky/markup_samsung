@@ -11,6 +11,9 @@
 @import "/css/layers/styles/styles.css" all;
 @import "/css/layers/styles/content.css" all;
 
+@import "/css/layers/project/layout.css" all;
+@import "/css/layers/project/unit.css" all;
+@import "/css/layers/project/icons.css" all;
 @import "/css/layers/project/project.css" all;
 
 /* RESPONSIVE
