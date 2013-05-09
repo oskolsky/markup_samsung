@@ -10,7 +10,7 @@ body {
   font-weight: 400;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
-  line-height: 1.5;
+  line-height: 1.3;
   min-width: 880px;
 }
 
@@ -53,7 +53,7 @@ h2 {
 }
 h3 {
   font-size: 3rem;
-  line-height: .9;
+  line-height: 1.125;
 }
 h4 {
   font-size: 2.5rem;
@@ -189,7 +189,7 @@ a:hover, .a__inner:hover > span {text-decoration: underline;}*/
 .datetime {
   color: #999;
   font-size: 1.2rem;
-  line-height: 2.5rem;
+  line-height: 1.2rem;
 }
 
 /* PRICE
