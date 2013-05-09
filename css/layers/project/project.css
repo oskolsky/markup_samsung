@@ -82,6 +82,11 @@
       .news_h {
         margin-bottom: 1rem;;
       }
+      .news .footer-nav-social {
+        display: inline-block;
+        float: none;
+        margin-left: .6rem;
+      }
 
   /* Chain stores */
   .chain-stores-img {
