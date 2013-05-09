@@ -18,7 +18,6 @@
     }
     .promo_text {
       color: #0982d3;
-      font-size: 1.4rem;
       line-height: 2.2rem;
       margin-bottom: 2.5rem;
     }
@@ -47,6 +46,31 @@
       .article_h {
         margin-bottom: 1rem;;
       }
+    .article-list {
+
+    }
+      .article-list_i {
+        margin-bottom: 4rem;
+        position: relative;
+        z-index: 1000;
+      }
+      .article-list_i:last-child {
+        margin-bottom: 2rem;
+      }
+        .article-list_a {
+          color: #333;
+        }
+        .article-list_a:hover {
+          color: #333;
+        }
+        .article-list_datetime {
+          position: absolute;
+          top: -15px;
+          z-index: 1001;
+        }
+    .article_readmore {
+      padding-left: 25px;
+    }
 
   /* News */
   .news {
@@ -58,3 +82,14 @@
       .news_h {
         margin-bottom: 1rem;;
       }
+
+  /* Chain stores */
+  .chain-stores-img {
+    margin-bottom: 2rem;
+  }
+  .chain-stores {
+
+  }
+    .chain-stores_i {
+      margin-bottom: 2rem;
+    }

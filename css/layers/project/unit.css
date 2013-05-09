@@ -60,16 +60,14 @@
         z-index: 1001;
     }
     .unit_type {
-      color: #333;
       font-size: 1.2rem;
       line-height: 2rem;
     }
     .unit_name {
-      font-size: 1.4rem;
       line-height: 1.8rem;
     }
       .unit_name a {
-        color: #333;
+
       }
     .unit_price {
       bottom: 9px;
@@ -77,7 +75,6 @@
       z-index: 1001;
     }
       .unit_discount {
-        font-size: 1.4rem;
         line-height: 1.8rem;
         text-decoration: line-through;
       }

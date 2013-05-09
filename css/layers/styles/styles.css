@@ -6,7 +6,7 @@ html {
 
 body {
   background: #fff;
-  color: #010104;
+  color: #333;
   font-weight: 400;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
@@ -200,3 +200,21 @@ a:hover, .a__inner:hover > span {text-decoration: underline;}*/
   font-weight: 400;
   margin-left: .5rem;
 }
+
+/* CUSTOM LIST
+---------------------------------------------------------------------------------------------------- */
+.custom-list {
+
+}
+  .custom-list li {
+    padding-left: 25px;
+    position: relative;
+    z-index: 1000;
+  }
+    .custom-list li:before {
+      color: #0982d3;
+      content: '— ';
+      left: 5px;
+      position: absolute;
+      z-index: 1001;
+    }

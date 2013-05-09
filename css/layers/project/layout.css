@@ -123,7 +123,6 @@
     z-index: 1001;
   }
   .header-profile_goto {
-    font-size: 1.4rem;
     line-height: 1.4rem;
     margin-bottom: .9rem;
   }
@@ -155,7 +154,7 @@
   }
     .menu_a {
       border-bottom: 1px solid #9fa0a0;
-      color: #010104;
+      color: #333;
       font-size: 1.8rem;
       line-height: 1.8rem;
       text-transform: uppercase;
@@ -163,7 +162,7 @@
     }
       .menu_a:hover {
         border-color: transparent;
-        color: #010104;
+        color: #333;
       }
     .menu_a__stock   {border-color: #cf341a;}
     .menu_a__bonuses {border-color: #004494;}
