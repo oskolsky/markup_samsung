@@ -113,3 +113,121 @@
 .page__article {
 
 }
+
+/* CATALOG PAGE
+---------------------------------------------------------------------------------------------------- */
+.page__catalog {
+
+}
+
+  /* Sort */
+  .catalog-filter-sort {
+    font-size: 1.2rem;
+    vertical-align: baseline;
+  }
+    .catalog-filter-sort-dropdown {
+      background: #f8f8f8;
+      border-radius: .5rem;
+      display: inline-block;
+      height: 3.3rem;
+      line-height: 3.3rem;
+      padding: 0 1.5rem;
+    }
+      .catalog-filter-sort-dropdown_a {
+        border-color: #333;
+        color: #333;
+        font-size: 1.2rem;
+      }
+      .catalog-filter-sort-dropdown_a:hover {
+        border-color: #333;
+        color: #333;
+      }
+      .catalog-filter-sort-dropdown_arrow {
+        font-size: 1rem;
+      }
+
+  /* Filter */
+  .catalog-filter {
+    background: #f8f8f8;
+  }
+
+    /* Form */
+    .catalog-filter_form {
+
+    }
+      .catalog-filter .form_label {
+        margin-bottom: .9rem;
+        padding-left: 2.5rem;
+        position: relative;
+        z-index: 1000;
+      }
+      .catalog-filter .form_el__fake {
+        left: 0;
+        position: absolute;
+        z-index: 1001;
+      }
+
+      /* Header */
+      .catalog-filter_header {
+        background: #0051a0;
+        color: #fff;
+        margin-bottom: 17px;
+        padding: 1.6rem 0 .6rem;
+        position: relative;
+        text-transform: uppercase;
+        text-align: center;
+        z-index: 1000;
+      }
+        .catalog-filter_header:before, .catalog-filter_header:after {
+          bottom: -15px;
+          content: '';
+          height: 0;
+          left: 0;
+          position: absolute;
+          width: 0;
+          z-index: 1001;
+        }
+        .catalog-filter_header:before {
+          border-left: 100px solid transparent;
+          border-top: 15px solid #0051a0;
+        }
+        .catalog-filter_header:before {
+          border-right: 100px solid transparent;
+          border-top: 15px solid #0051a0;
+        }
+
+      /* Section block */
+      .catalog-filter_section {
+        padding: 1.3rem 1.5rem .6rem;
+      }
+      .catalog-filter_section__bordered {
+        border-bottom: 1px solid #e0e0e0;
+      }
+        .catalog-filter_t {
+          font-weight: 700;
+          margin-bottom: .7rem;
+        }
+          .catalog-filter_help {
+            background: #00a9e0;
+            border-radius: 50%;
+            color: #fff;
+            height: 10px;
+            font-size: .8rem;
+            line-height: 10px;
+            position: absolute;
+            right: -12px;
+            top: 4px;
+            text-align: center;
+            text-decoration: none;
+            width: 10px;
+            z-index: 1001;
+          }
+          .catalog-filter_help:hover {color: #fff;}
+
+      /* Footer */
+      .catalog-filter_footer {
+        text-align: center;
+        position: relative;
+        top: 16px;
+        z-index: 1000;
+      }
