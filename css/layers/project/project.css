@@ -125,26 +125,6 @@
     font-size: 1.2rem;
     vertical-align: baseline;
   }
-    .catalog-filter-sort-dropdown {
-      background: #f8f8f8;
-      border-radius: .5rem;
-      display: inline-block;
-      height: 3.3rem;
-      line-height: 3.3rem;
-      padding: 0 1.5rem;
-    }
-      .catalog-filter-sort-dropdown_a {
-        border-color: #333;
-        color: #333;
-        font-size: 1.2rem;
-      }
-      .catalog-filter-sort-dropdown_a:hover {
-        border-color: #333;
-        color: #333;
-      }
-      .catalog-filter-sort-dropdown_arrow {
-        font-size: 1rem;
-      }
 
   /* Filter */
   .catalog-filter {
