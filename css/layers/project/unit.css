@@ -76,7 +76,8 @@
     .unit_type {
       font-family: 'PFSquareSansProRegular';
       font-size: 1.2rem;
-      line-height: 2rem;
+      line-height: 1.2rem;
+      width: 120px;
     }
     .unit_name {
       font-family: 'PFSquareSansProRegular';
