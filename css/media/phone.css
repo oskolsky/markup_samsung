@@ -1,4 +1,0 @@
-.hidden-phone,
-.visible-desktop {display: none !important;}
-.hidden-desktop,
-.visible-phone   {display: inherit !important;}
