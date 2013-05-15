@@ -1,0 +1,20 @@
+/* ICON
+---------------------------------------------------------------------------------------------------- */
+.ico-14 {
+  background: url(/img/ico-14.png) 0 0;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+}
+.ico-14__fb {background-position: 0 0;}
+.ico-14__tw {background-position: -14px 0;}
+.ico-14__vk {background-position: -28px 0;}
+
+.ico-20 {
+  background: url(/img/ico-20.png) 0 0;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+.ico-20__bag    {background-position: 0 0;}
+.ico-20__search {background-position: -20px 0;}

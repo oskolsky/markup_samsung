@@ -1,0 +1,15 @@
+/* IOSSLIDER
+---------------------------------------------------------------------------------------------------- */
+.slider {
+  position: relative;
+  top: 0;
+  left: 0;  
+}
+.slider > .slides {
+  width: 100%;
+  height: 100%;
+}
+.slider > .slides > .slide {
+  float: left;
+  -webkit-backface-visibility: visible !important; /* For sharp font rendering inside slide */
+}
