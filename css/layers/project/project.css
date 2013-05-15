@@ -15,9 +15,11 @@
   }
     .promo_title {
       color: #333;
+      font-family: 'PFSquareSansProRegular';
     }
     .promo_text {
       color: #0982d3;
+      font-family: 'PFSquareSansProRegular';
       line-height: 2.2rem;
       margin-bottom: 2.5rem;
     }

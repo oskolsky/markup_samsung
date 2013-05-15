@@ -74,16 +74,19 @@
         z-index: 1001;
     }
     .unit_type {
+      font-family: 'PFSquareSansProRegular';
       font-size: 1.2rem;
       line-height: 2rem;
     }
     .unit_name {
+      font-family: 'PFSquareSansProRegular';
       line-height: 1.8rem;
     }
       .unit_name a {
         color: #333;
       }
     .unit_price {
+      font-family: 'PFSquareSansProBold';
       bottom: 9px;
       position: absolute;
       z-index: 1001;

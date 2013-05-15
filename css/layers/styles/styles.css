@@ -39,7 +39,7 @@ a:active {color: #0982d3;}
 ---------------------------------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-  /*font-family: "PT Serif", Times, "Times New Roman", serif;*/
+  font-family: 'PFSquareSansProMedium' ,"PT Serif", Times, "Times New Roman", serif;
   text-rendering: optimizeLegibility;
 }
 

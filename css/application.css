@@ -25,3 +25,47 @@
    http://www.google.com/webfonts
 ---------------------------------------------------------------------------------------------------- */
 @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic);
+
+@font-face {
+    font-family: 'PFSquareSansProBold';
+    src: url('http://www.samsung.com//ru/common/font/pfsquaresanspro-bold-webfont.eot');
+    src: url('http://www.samsung.com//ru/common/font/pfsquaresanspro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('http://www.samsung.com//ru/common/font/pfsquaresanspro-bold-webfont.woff') format('woff'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-bold-webfont.ttf') format('truetype'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-bold-webfont.svg#PFSquareSansProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFSquareSansProRegular';
+    src: url('http://www.samsung.com//ru/common/font/pfsquaresanspro-regular-webfont.eot');
+    src: url('http://www.samsung.com//ru/common/font/pfsquaresanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-regular-webfont.woff') format('woff'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-regular-webfont.ttf') format('truetype'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-regular-webfont.svg#PFSquareSansProRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFSquareSansProMedium';
+    src: url('http://www.samsung.com//ru/common/font/pfsquaresanspro-medium-webfont.eot');
+    src: url('http://www.samsung.com//ru/common/font/pfsquaresanspro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-medium-webfont.woff') format('woff'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-medium-webfont.ttf') format('truetype'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-medium-webfont.svg#PFSquareSansProMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PFSquareSansProLight';
+    src: url('http://www.samsung.com//ru/common/font/pfsquaresanspro-light-webfont.eot');
+    src: url('http://www.samsung.com//ru/common/font/pfsquaresanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-light-webfont.woff') format('woff'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-light-webfont.ttf') format('truetype'),
+         url('http://www.samsung.com//ru/common/font/pfsquaresanspro-light-webfont.svg#PFSquareSansProLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
