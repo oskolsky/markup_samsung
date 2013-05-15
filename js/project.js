@@ -57,8 +57,16 @@ $(function() {
       $('.availability-section').css({height: '150px'});
       $(this).text('Развернуть список');
     }
-    
     return false;
+  });
+
+  $('.catalog-filter_help').hover(function() {
+    var 
+        title = $(this).parent('span').attr('data-title'),
+        tpl = '<div class="catalog-filter_tooltip">' + title + '</div>';
+    $(this).parent('span').append(tpl);  
+  }, function() {
+    $(this).parent('span').find('.catalog-filter_tooltip').remove();
   });
 
 });

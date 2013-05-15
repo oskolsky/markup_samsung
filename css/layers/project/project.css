@@ -156,7 +156,7 @@
         position: relative;
         text-transform: uppercase;
         text-align: center;
-        z-index: 1000;
+        z-index: 9999;
       }
         .catalog-filter_header:before, .catalog-filter_header:after {
           bottom: -15px;
@@ -186,6 +186,8 @@
         .catalog-filter_t {
           font-weight: 700;
           margin-bottom: .7rem;
+          position: relative;
+          z-index: 9999;
         }
           .catalog-filter_help {
             background: #00a9e0;
@@ -203,6 +205,16 @@
             z-index: 1001;
           }
           .catalog-filter_help:hover {color: #fff;}
+          .catalog-filter_tooltip {
+            background: #fff;
+            border: 1px solid #3f94bb;
+            font-size: 1.4rem;
+            font-weight: 100;
+            padding: 1rem;
+            position: absolute;
+            width: 230px;
+            z-index: 9999;
+          }
 
       /* Footer */
       .catalog-filter_footer {
