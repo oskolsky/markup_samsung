@@ -40,7 +40,7 @@
         </section>
         <footer>
           <div class="units-slider-controls">
-            <div class="units-slider-control units-slider-control_prev" style="opacity: 0.2;"></div>
+            <div class="units-slider-control units-slider-control_prev units-slider-control__disabled"></div>
             <div class="units-slider-control units-slider-control_next"></div>
           </div>
           <nav class="units-slider-buls">
@@ -79,7 +79,7 @@
         </section>
         <footer>
           <div class="units-slider-controls">
-            <div class="units-slider-control units-slider-control_prev" style="opacity: 0.2;"></div>
+            <div class="units-slider-control units-slider-control_prev units-slider-control__disabled"></div>
             <div class="units-slider-control units-slider-control_next"></div>
           </div>
           <nav class="units-slider-buls">
@@ -156,11 +156,11 @@
             navNextSelector:  _this.find('.units-slider-control_next'),
             navSlideSelector: _this.find('.units-slider-buls_i'),
             onSlideComplete: function(args) {
-              _this.find('.units-slider-control_prev, .units-slider-control_next').css({opacity: 1});
+              _this.find('.units-slider-control_prev, .units-slider-control_next').removeClass("units-slider-control__disabled");
               if(args.currentSlideNumber == 1) {
-                _this.find('.units-slider-control_prev').css({opacity: .2});
+                _this.find('.units-slider-control_prev').addClass("units-slider-control__disabled");
               } else if(args.currentSliderOffset == args.data.sliderMax) {
-                _this.find('.units-slider-control_next').css({opacity: .2});
+                _this.find('.units-slider-control_next').addClass("units-slider-control__disabled");
               }
             },
             onSlideChange: function(args) {
