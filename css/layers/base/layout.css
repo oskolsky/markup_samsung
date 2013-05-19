@@ -63,6 +63,7 @@ button, input, select, textarea, th, td {
 
 /* BOTTOM INDENT
 ---------------------------------------------------------------------------------------------------- */
+.m-b_1  {margin-bottom: 1rem !important;}
 .m-b_2  {margin-bottom: 2rem !important;}
 .m-b_4  {margin-bottom: 4rem !important;}
 .m-b_6  {margin-bottom: 6rem !important;}

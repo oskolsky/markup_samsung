@@ -74,7 +74,6 @@
         z-index: 1001;
     }
     .unit_type {
-      font-family: 'PFSquareSansProRegular';
       font-size: 1.2rem;
       line-height: 1.2rem;
       width: 120px;
@@ -87,7 +86,6 @@
         color: #333;
       }
     .unit_price {
-      font-family: 'PFSquareSansProBold';
       bottom: 9px;
       position: absolute;
       z-index: 1001;
@@ -97,6 +95,7 @@
         text-decoration: line-through;
       }
       .unit_sum {
+        font-family: 'PFSquareSansProBold';
         color: #0982d3;
         font-size: 3rem;
         font-weight: 700;

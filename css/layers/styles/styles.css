@@ -79,7 +79,9 @@ h2 > .a__inner > span,
 h3 > .a__inner > span,
 h4 > .a__inner > span,
 h5 > .a__inner > span,
-h6 > .a__inner > span {text-decoration: none;}
+h6 > .a__inner > span {
+  font-family: 'PFSquareSansProRegular' ,"PT Serif", Times, "Times New Roman", serif;
+}
 
 /* FORM ELEMENTS
 ---------------------------------------------------------------------------------------------------- */
@@ -251,6 +253,7 @@ a:hover, .a__inner:hover > span {text-decoration: underline;}*/
     text-decoration: line-through;
   }
   .show-price_sum {
+    font-family: 'PFSquareSansProBold';
     font-size: 3rem;
     font-weight: 700;
   }

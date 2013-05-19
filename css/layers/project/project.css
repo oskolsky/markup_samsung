@@ -138,6 +138,7 @@
 
     }
       .catalog-filter .form_label {
+        cursor: pointer;
         margin-bottom: .9rem;
         padding-left: 2.5rem;
         position: relative;
@@ -232,7 +233,7 @@
 
 }
   .availability-header {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   .availability-section {
     height: 150px;
