@@ -72,10 +72,10 @@
     .unit_type {
       font-size: 1.2rem;
       line-height: 1.2rem;
-      width: 120px;
+      width: 125px;
     }
     .unit_name {
-      font-family: 'PFSquareSansProRegular';
+      font-family: 'PFSquareSansProRegular', "PT Sans", Helvetica, Arial, sans-serif;
       line-height: 1.8rem;
     }
       .unit_name a {
@@ -91,7 +91,7 @@
         text-decoration: line-through;
       }
       .unit_sum {
-        font-family: 'PFSquareSansProBold';
+        font-family: 'PFSquareSansProBold', "PT Sans", Helvetica, Arial, sans-serif;
         color: #0982d3;
         font-size: 3rem;
         font-weight: 700;

@@ -15,11 +15,11 @@
   }
     .promo_title {
       color: #333;
-      font-family: 'PFSquareSansProRegular';
+      font-family: 'PFSquareSansProRegular', "PT Sans", Helvetica, Arial, sans-serif;
     }
     .promo_text {
       color: #0982d3;
-      font-family: 'PFSquareSansProRegular';
+      font-family: 'PFSquareSansProRegular', "PT Sans", Helvetica, Arial, sans-serif;
       line-height: 2.2rem;
       margin-bottom: 2.5rem;
     }
@@ -37,6 +37,65 @@
       top: 0;
       z-index: -1;
     }
+    .map_point {
+      background: #0982d3;
+      border-radius: 50%;
+      cursor: pointer;
+      position: absolute;
+      z-index: 1001;
+    }
+    .map_point__small  {width: 8px; height: 8px;}
+    .map_point__normal {width: 14px; height: 14px;}
+    .map_point__medium {width: 24px; height: 24px;}
+    .map_point__large  {width: 42px; height: 42px;}
+      .map_point > span {
+        bottom: -18px;
+        font-size: 1.2rem;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform:    translate(-50%, 0);
+        -ms-transform:     translate(-50%, 0);
+        -o-transform:      translate(-50%, 0);
+        transform:         translate(-50%, 0);
+        position: absolute;
+        white-space: nowrap;
+        z-index: 1001;
+      }
+      .map_tooltip {
+        background: #0982d3;
+        border-radius: 5px;
+        color: #fff;
+        display: none;
+        height: 60px;
+        left: 50%;
+        padding: 5px 15px 0;
+        position: absolute;
+        text-align: center;
+        top: -75px;
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform:    translate(-50%, 0);
+        -ms-transform:     translate(-50%, 0);
+        -o-transform:      translate(-50%, 0);
+        transform:         translate(-50%, 0);
+        width: 150px;
+        z-index: 1001;
+      }
+      .map_tooltip:after {
+        background: #0982d3;
+        bottom: -6px;
+        content: '';
+        height: 12px;
+        left: 50%;
+        margin-left: -6px;
+        position: absolute;
+        -webkit-transform: rotate(45deg);
+        -moz-transform:    rotate(45deg);
+        -ms-transform:     rotate(45deg);
+        -o-transform:      rotate(45deg);
+        transform:         rotate(45deg);
+        width: 12px;
+        z-index: 1001;
+      }
 
   /* Article */
   .article {

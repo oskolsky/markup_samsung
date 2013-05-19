@@ -39,7 +39,7 @@ a:active {color: #0982d3;}
 ---------------------------------------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
-  font-family: 'PFSquareSansProMedium' ,"PT Serif", Times, "Times New Roman", serif;
+  font-family: 'PFSquareSansProMedium', "PT Sans", Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -80,7 +80,7 @@ h3 > .a__inner > span,
 h4 > .a__inner > span,
 h5 > .a__inner > span,
 h6 > .a__inner > span {
-  font-family: 'PFSquareSansProRegular' ,"PT Serif", Times, "Times New Roman", serif;
+  font-family: 'PFSquareSansProRegular', "PT Sans", Helvetica, Arial, sans-serif;
 }
 
 /* FORM ELEMENTS
@@ -253,7 +253,7 @@ a:hover, .a__inner:hover > span {text-decoration: underline;}*/
     text-decoration: line-through;
   }
   .show-price_sum {
-    font-family: 'PFSquareSansProBold';
+    font-family: 'PFSquareSansProBold', "PT Sans", Helvetica, Arial, sans-serif;
     font-size: 3rem;
     font-weight: 700;
   }

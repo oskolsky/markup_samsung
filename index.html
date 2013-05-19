@@ -56,6 +56,10 @@
         <div class="ctn p-r">
           <h3>Фирменная сеть магазинов Samsung</h3>
           <img src="/img/map.png" alt="Фирменная сеть магазинов Samsung" class="map_img">
+          <div class="map_point map_point__small"  style="top: 230px; left: 820px;" data-store="2" data-buyers="2700"><span>&nbsp;</span></div>
+          <div class="map_point map_point__normal" style="top: 370px; left: 490px;" data-store="2" data-buyers="2700"><span>Омск</span></div>
+          <div class="map_point map_point__medium" style="top: 125px; left: 150px;" data-store="2" data-buyers="2700"><span>Санкт-Петербург</span></div>
+          <div class="map_point map_point__large"  style="top: 175px; left: 100px;" data-store="2" data-buyers="2700"><span>Москва</span></div>
         </div>
       </section>
 
@@ -147,6 +151,8 @@
 
     <script type="text/javascript">
       $(function() {
+
+        <!-- Slider initialize -->
         $('.units-slider-wrapper').each(function() {
           var _this = $(this);
           $(this).find('.units-slider').iosSlider({
@@ -169,6 +175,23 @@
             }
           });
         });
+
+        <!-- Map point hover -->
+        $('.map_point').hover(function() {
+          var
+              store  = $(this).attr('data-store'),
+              buyers = $(this).attr('data-buyers');
+          var tpl = '' +
+            '<div class="map_tooltip">' +
+              '<div style="display: inline-block; width: 70px;"><p style="font-size: 1.2rem;">магазинов</p><p style="font-family: PFSquareSansProBold; font-size: 3rem;">2</p></div>' +
+              '<div style="display: inline-block; width: 80px;"><p style="font-size: 1.2rem;">покупателей</p><p style="font-family: PFSquareSansProBold; font-size: 3rem;">2700</p></div>' +
+            '</div>';
+          $(this).append(tpl);
+          $(this).find('.map_tooltip').fadeIn();
+        }, function() {
+          $(this).find('.map_tooltip').remove();
+        });
+
       });
     </script>
 
