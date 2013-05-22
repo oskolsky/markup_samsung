@@ -299,6 +299,19 @@
   .basket {
 
   }
+    /* Goods list */
+    .basket-goods {
+
+    }
+      .basket-goods-i {
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 0;
+        padding-top: 2rem;
+      }
+        .basket-goods-i_img {
+          vertical-align: top;
+        }
+    /* Basket items */
     .basket-i {
 
     }
