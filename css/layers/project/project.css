@@ -306,10 +306,62 @@
       .basket-goods-i {
         border-bottom: 1px solid #e5e5e5;
         margin-bottom: 0;
-        padding-top: 2rem;
+        padding: 2rem 0;
       }
         .basket-goods-i_img {
           vertical-align: top;
+        }
+        .basket-goods-i_a {
+          color: #333;
+          font-weight: 700;
+          margin: .3rem 0 .5rem;
+        }
+        .basket-goods-i-count {
+          font-size: 0;
+        }
+          .basket-goods-i-count_input {
+            border: none;
+            border-bottom: 1px solid #bebebe;
+            border-top: 1px solid #bebebe;
+            font-size: 1.8rem;
+            height: 32px;
+            text-align: center;
+            width: 35px;
+          }
+          .basket-goods-i-count_control {
+            background: rgb(255,255,255);
+            background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(199,199,199,1) 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(199,199,199,1)));
+            background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(199,199,199,1) 100%);
+            background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(199,199,199,1) 100%);
+            background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(199,199,199,1) 100%);
+            background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(199,199,199,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c7c7c7',GradientType=0 );
+            border-bottom: 1px solid #c7c7c7;
+            color: #7b7b7b;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 1.8rem;
+            font-weight: 700;
+            height: 31px;
+            line-height: 31px;
+            text-align: center;
+            width: 21px;
+            vertical-align: top;
+          }
+          .basket-goods-i-count_control__minus {
+            border-left: 1px solid #ababab;
+            border-right: 1px solid #bebebe;
+          }
+          .basket-goods-i-count_control__plus {
+            border-left: 1px solid #bebebe;
+            border-right: 1px solid #ababab;
+          }
+        .basket-goods-i_remove {
+          position: absolute;
+          right: 0;
+          top: 2.5rem;
+          z-index: 1001;
         }
     /* Basket items */
     .basket-i {
@@ -334,7 +386,7 @@
         margin-bottom: 2rem;
         padding-left: 5rem;
         position: relative;
-        width: 900px;
+        width: 850px;
         z-index: 1000;
       }
       .basket-i__current .basket-i-h {
