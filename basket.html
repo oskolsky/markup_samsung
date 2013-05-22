@@ -19,13 +19,14 @@
         <section class="basket">
           <form class="form" name="basket">
 
-            <section class="basket-goods m-b_2">
+            <section class="basket-goods">
               <!--#include virtual="/views/basket/_item.html" -->
               <!--#include virtual="/views/basket/_item.html" -->
             </section>
 
-            <section>
-              <p><b>Вместе будет дешевле</b></p>
+            <section class="basket-units">
+              <p class="basket-units_t"><b>Вместе будет дешевле</b></p>
+              <!--#include virtual="/views/basket/_unit.html" --><!--#include virtual="/views/basket/_unit.html" --><!--#include virtual="/views/basket/_unit.html" -->
             </section>
 
             <section class="basket-i basket-i_to basket-i__open basket-i__current">
@@ -53,7 +54,7 @@
                 <div class="cols m-b_1">
                   <div class="cols-2 mod">
                     <label class="form_label basket-i-b_label">Город</label>
-                    <div class="form_select__fake form_el__fake cols-2">
+                    <div class="form_select__fake form_el__fake form_el__block">
                       <p>&nbsp;</p>
                       <select class="form_select__real form_el__real">
                         <option selected>Выберите</option>
@@ -62,7 +63,7 @@
                         <option>Воронеж</option>
                       </select>
                     </div>
-                  </div><div class="cols-5 offset-1 mod">
+                  </div><div class="cols-5 mod">
                     <p><i>Способ доставки</i></p>
                     <div>
                       <a href="#" class='basket-i-b_shipping-method'><span>Курьером, бесплатно</span></a>
