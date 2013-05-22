@@ -51,6 +51,7 @@
   .form_button__inbag {
     border: 4px solid #f8f8f8;
     border-radius: .8rem;
+    left: -4px;
     padding-right: 49px;
     position: relative;
     top: 16px;
@@ -87,9 +88,14 @@
   .form_label > .form_checkbox__fake,
   .form_label > .form_radio__fake {
     position: relative;
-    top: .1rem;
     z-index: 1000;
     vertical-align: baseline;
+  }
+  .form_label > .form_checkbox__fake {
+    top: .1rem;
+  }
+  .form_label > .form_radio__fake {
+    top: .5rem;
   }
 
   /* <INPUT TYPE="CHECKBOX"> */
@@ -136,12 +142,11 @@
     z-index: 1000;
     display: inline-block;
     overflow: hidden;
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     background: #fff;
-    border: 1px solid #ccc;
-    -webkit-border-radius: 50%;
-            border-radius: 50%;
+    border: 1px solid #cecece;
+    border-radius: 50%;
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
@@ -151,11 +156,12 @@
     top: 50%;
     left: 50%;
     z-index: 1001;
-    width: 6px;
-    height: 6px;
-    margin: -3px 0 0 -3px;
+    width: 10px;
+    height: 10px;
+    margin: -5px 0 0 -5px;
     content: "";
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6ODU1NzA4REY5MTUwMTFFMjgwNDRCQTZBNUMzNkFGMjQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6ODU1NzA4RTA5MTUwMTFFMjgwNDRCQTZBNUMzNkFGMjQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NTU3MDhERDkxNTAxMUUyODA0NEJBNkE1QzM2QUYyNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4NTU3MDhERTkxNTAxMUUyODA0NEJBNkE1QzM2QUYyNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PiDEAN8AAAA7SURBVHjaYgwICJBiYGBIA+JQBghYDcSzWKCC9QwIAGYzIalEBqFMDDgAE9RMdLAaZMcsmHZkywECDADEcAiycFh5lwAAAABJRU5ErkJggg==) transparent center no-repeat;
+    background: #0982d3;
+    border-radius: 50%;
   }
   .form_radio__fake[data-checked="true"][disabled]:after {opacity: .33;}
     .form_radio__real {

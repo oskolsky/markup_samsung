@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--[if IE 9]><html lang="ru-RU" class="no-js ie9"><![endif]-->
+<html lang="ru-RU" class="no-js">
+  <head>
+    <title>Корзина / SAMSUNG Фирменные магазины</title>
+    <!--#include virtual="/views/layouts/_head.html" -->
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+  </head>
+  <body class="page__basket">
+
+    <!--#include virtual="/views/layouts/_alerts.html" -->
+    <!--#include virtual="/views/layouts/_header.html" -->
+
+    <section id="section" class="section" role="main">
+      <div class="ctn">
+        <header>
+          <h1 class="page-title">Корзина</h1>
+        </header>
+        <section class="basket">
+          <form class="form" name="basket">
+
+            <section class="basket-i basket-i_to basket-i__open basket-i__current">
+              <header class="basket-i-h"><span class="basket-i-h_n">1</span>Кому доставить</header>
+              <section class="basket-i-b">
+                <p class="m-b_1">Мы гарантируем кофиденциальность ваших персональных данных.</p>
+                <div class="cols">
+                  <div class="cols-3 mod">
+                    <label class="form_label basket-i-b_label">Ваше имя</label>
+                    <input type="text" class="form_text form_el__block" data-valid="false">
+                  </div><div class="cols-3 mod">
+                    <label class="form_label basket-i-b_label">E-mail</label>
+                    <input type="email" class="form_text form_el__block">
+                  </div><div class="cols-2 mod">
+                    <label class="form_label basket-i-b_label">Телефон</label>
+                    <input type="text" class="form_text form_el__block">
+                  </div>
+                </div>
+              </section>
+            </section>
+
+            <section class="basket-i basket-i_where basket-i__open">
+              <header class="basket-i-h"><span class="basket-i-h_n">2</span>Куда доставить</header>
+              <section class="basket-i-b">
+                <div class="cols m-b_1">
+                  <div class="cols-2 mod">
+                    <label class="form_label basket-i-b_label">Город</label>
+                    <div class="form_select__fake form_el__fake cols-2">
+                      <p>&nbsp;</p>
+                      <select class="form_select__real form_el__real">
+                        <option selected>Выберите</option>
+                        <option>Санкт-Петербург</option>
+                        <option>Москва</option>
+                        <option>Воронеж</option>
+                      </select>
+                    </div>
+                  </div><div class="cols-5 offset-1 mod">
+                    <p><i>Способ доставки</i></p>
+                    <div>
+                      <a href="#" class='basket-i-b_shipping-method'><span>Курьером, бесплатно</span></a>
+                      <div class="basket-i-b_shipping-details">Самовывоз со склада, бесплатно</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-b_1">
+                  <p><i>Адрес склада</i></p>
+                  <p>Санкт-Петербург, площадь Восстания, д.3. Время работы — с 9<sup>00</sup> до 19<sup>00</sup></p>
+                </div>
+                <div id="map" style="width: 100%; height: 180px"></div>
+              </section>
+            </section>
+
+            <section class="basket-i basket-i_payment basket-i__open">
+              <header class="basket-i-h"><span class="basket-i-h_n">3</span>Как оплатить</header>
+              <section class="basket-i-b">
+                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Наличными курьеру</label>
+                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Безналичный расчет для юр. лиц</label>
+                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Кредитная карта курьеру</label>
+                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Оформление товара в кредит</label>
+                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Кредитной картой через интернет</label>
+                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Банковский перевод</label>
+              </section>
+            </section>
+
+            <section class="basket-i basket-i_confirmation basket-i__open">
+              <header class="basket-i-h"><span class="basket-i-h_n">4</span>Подтверждение</header>
+              <section class="basket-i-b">
+                <div class="cols">
+                  <div class="cols-5 mod">
+                    <ul class="basket-i-b_buyer-list m-b_1">
+                      <li>Сикорский Леонид Яковлевич</li>
+                      <li>Электронная почта: dfsgdsfg@dfsdf.ty</li>
+                      <li>Телефон: +7 905 666-66-66</li>
+                      <li>Точное время доставки уточнит менеджер при согласовании деталей заказа</li>
+                    </ul>
+                    <a href="javascript: void(null);"onclick="document.basket.submit();" class="form_button form_button__inbag tt-uc m-b_3" >Оформить</a>
+                    <p>Нужна помощь в оформлении заказа?</p>
+                    <p>Перезвоните нам 8 (495) 651-62-85 или <a href="#">закажите обратный звонок.</a></p>
+                  </div><div class="cols-1 mod">
+                    <div class="basket-i-b_details tx__large tx__muted">Цена</div>
+                    <div class="basket-i-b_details tx__large tx__muted">Доставка</div>
+                    <div class="basket-i-b_details tx__large">Итого</div>
+                  </div><div class="cols-2 mod">
+                    <div class="basket-i-b_details"><div class="show-price tx__muted"><div class="show-price_sum price price__rub js-price-format">24990</div></div></div>
+                    <div class="basket-i-b_details tx__large tx__muted">Бесплатно</div>
+                    <div class="basket-i-b_details"><div class="show-price"><div class="show-price_sum price price__rub js-price-format">24990</div></div></div>
+                  </div>
+                </div>
+              </section>
+            </section>
+
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <!--#include virtual="/views/layouts/_footer.html" -->
+    <!--#include virtual="/views/layouts/_dialogs.html" -->
+
+    <script type="text/javascript">
+      ymaps.ready(init);
+      var myMap,
+        myPlacemark;
+      function init(){
+        myMap = new ymaps.Map ("map", {
+          center: [55.76, 37.64],
+          zoom: 14
+        });
+        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+          content: 'Санкт-Петербург, площадь Восстания, д.3.',
+          balloonContent: 'Время работы — с 9:00 до 19:00'
+        });
+        myMap.geoObjects.add(myPlacemark);
+      }
+    </script>
+
+  </body>
+</html>

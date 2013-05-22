@@ -138,6 +138,8 @@ textarea {resize: none;}
 .tx__normal {font-size: 1.4rem !important;}
 .tx__large  {font-size: 1.8rem;}
 
+.tx__muted {color: #666;}
+
 /* LINKS
 ---------------------------------------------------------------------------------------------------- */
 .a__inner {text-decoration: none;}
@@ -188,6 +190,12 @@ a:hover, .a__inner:hover > span {text-decoration: underline;}*/
 .a__pseudo.a__inner,
 .a__pseudo:hover,
 .a__pseudo.a__inner:hover > span {border-bottom-color: transparent;}*/
+
+/* Other */
+sup {
+  font-size: .8rem;
+  vertical-align: top;
+}
 
 /* DATETIME
 ---------------------------------------------------------------------------------------------------- */
