@@ -735,6 +735,7 @@
     margin-left: 4rem;
   }
   .dialog_remember {
+    cursor: pointer;
     margin-left: 4rem;
     position: relative;
     top: 1rem;

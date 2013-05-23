@@ -4,6 +4,10 @@
   background: #00000a;
   padding: 1rem 0 1.2rem;
 }
+  .navbar > .ctn {
+    position: relative;
+    z-index: 1000;
+  }
   .navbar_group {
     float: left;
     margin-right: 40px;
@@ -15,9 +19,12 @@
       float: left;
     }
   .navbar_group__search {
-    float: right;
     margin-right: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 166px;
+    z-index: 1001;
   }
     .search-form {
       position: relative;
@@ -37,6 +44,7 @@
       }
       .search-form_text {
         padding: 0 1rem 0 3rem;
+        width: 100%;
       }
 
 /* HEADER

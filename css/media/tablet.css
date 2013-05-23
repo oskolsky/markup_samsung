@@ -2,3 +2,7 @@
 .visible-desktop {display: none !important;}
 .hidden-desktop,
 .visible-tablet  {display: inherit !important;}
+
+.units-slider-controls {display: none;}
+.unit__new .unit_label:before {display: none;}
+.header-phone_number {font-size: 2rem;}
