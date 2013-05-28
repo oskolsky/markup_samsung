@@ -574,14 +574,6 @@
             margin-left: -4px;
             width: 8px;;
           }
-
-          .shipping-method_map {
-              
-          }
-          .shipping-method_addres {
-            display: none;
-          }
-
         /* Text input label */
         .basket-i-b_label {
           display: inline-block;
