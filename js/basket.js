@@ -1,5 +1,6 @@
 $(function() {
 
+  // Calculator
   var 
       $plus  = $('.basket-goods-i-count_control__plus'),
       $minus = $('.basket-goods-i-count_control__minus');
@@ -32,6 +33,18 @@ $(function() {
       $(this).closest('.basket-goods-i').find('.js-summary-info').text(count + ' x ' + summ + ' руб.');
       totalPrice();
     }
+  });
+
+  // Add accessory
+  $('.basket-goods-i_add-accessory').click(function() {
+    if ( $(this).closest('.basket-goods-i').find('.basket-units').is(':hidden') ) {
+      $(this).closest('.basket-goods-i').find('.basket-units').show();
+      $(this).addClass('basket-goods-i_add-accessory__current');
+    } else {
+      $(this).closest('.basket-goods-i').find('.basket-units').hide();
+      $(this).removeClass('basket-goods-i_add-accessory__current');
+    }    
+    return false;
   });
 
 });
