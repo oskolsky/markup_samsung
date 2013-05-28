@@ -47,6 +47,21 @@ $(function() {
     return false;
   });
 
+  // Shipping method
+  $('.basket-i-b_shipping-method').click(function() {
+    var method = $(this).data('method');
+    if (method == 'map') {
+      $('.shipping-method_map').show();
+      $('.shipping-method_address').hide();
+    } else if (method == 'address') {
+      $('.shipping-method_address').show();
+      $('.shipping-method_map').hide();
+    }
+    $('.basket-i-b_shipping-method__current').removeClass('basket-i-b_shipping-method__current');
+    $(this).addClass('basket-i-b_shipping-method__current');
+    return false;
+  });
+
 });
 
 function totalPrice() {

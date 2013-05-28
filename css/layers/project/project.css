@@ -526,11 +526,13 @@
       .basket-i_confirmation .basket-i-b {}
         /* Shipping Method */
         .basket-i-b_shipping-method {
+          border: 2px solid transparent;
+          border-radius: .5rem;
           color: #333;
           display: inline-block;
-          height: 4rem;
-          line-height: 4rem;
-          margin-right: 2rem;
+          height: 3rem;
+          line-height: 3rem;
+          padding: 0 1rem;
           text-decoration: none;
         }
         .basket-i-b_shipping-method:hover {
@@ -539,24 +541,21 @@
           .basket-i-b_shipping-method > span {
             border-bottom: 1px dashed #333;
           }
-        /* Shipping details */
-        .basket-i-b_shipping-details {
+        .basket-i-b_shipping-method__current {
           border: 2px solid #0982d3;
-          border-radius: .5rem;
-          display: inline-block;
-          height: 3rem;
-          line-height: 3rem;
-          padding: 0 1rem;
           position: relative;
           z-index: 1000;
         }
-          .basket-i-b_shipping-details:before, .basket-i-b_shipping-details:after {
+          .basket-i-b_shipping-method__current > span {
+            border-color: transparent;
+          }
+          .basket-i-b_shipping-method__current:before, .basket-i-b_shipping-method__current:after {
             content: '';
             left: 50%;
             position: absolute;
             z-index: 1001;
           }
-          .basket-i-b_shipping-details:before {
+          .basket-i-b_shipping-method__current:before {
             background: #0982d3;
             bottom: -6px;
             height: 8px;
@@ -568,13 +567,21 @@
             transform:         rotate(45deg);
             width: 8px;
           }
-          .basket-i-b_shipping-details:after {
+          .basket-i-b_shipping-method__current:after {
             background: #fff;
             bottom: 0;
-            height: 8px;
+            height: 4px;
             margin-left: -4px;
             width: 8px;;
           }
+
+          .shipping-method_map {
+              
+          }
+          .shipping-method_addres {
+            display: none;
+          }
+
         /* Text input label */
         .basket-i-b_label {
           display: inline-block;
