@@ -67,25 +67,28 @@
   .header-logo_img {
     vertical-align: middle;
   }
-  .header-logo_contacts {
-    font-size: 1.2rem;
-    line-height: 2.8rem;
-    text-decoration: none;
+  .header-logo_summary {
+    white-space: nowrap;  
   }
-    .header-logo_contacts > span {
-      border-bottom: 1px solid #7c7c7d;
-      color: #7c7c7d;
+    .header-logo_contacts {
+      font-size: 1.2rem;
+      line-height: 2.8rem;
+      text-decoration: none;
     }
-  .header-logo_geo {    
-    font-size: 1.2rem;
-    line-height: 2.8rem;
-    margin-right: 10px;
-    text-decoration: none;
-  }
-    .header-logo_geo > span {
-      border-bottom: 1px dotted #7c7c7d;
-      color: #7c7c7d;
+      .header-logo_contacts > span {
+        border-bottom: 1px solid #7c7c7d;
+        color: #7c7c7d;
+      }
+    .header-logo_geo {    
+      font-size: 1.2rem;
+      line-height: 2.8rem;
+      margin-right: 10px;
+      text-decoration: none;
     }
+      .header-logo_geo > span {
+        border-bottom: 1px dotted #7c7c7d;
+        color: #7c7c7d;
+      }
 
 /* Phone */
 .header-phone {

@@ -745,7 +745,7 @@
       top: 3px;
     }
 
-/* LOCATION
+/* LOCATION FOR DIALOG
 ---------------------------------------------------------------------------------------------------- */
 .location {
 
@@ -767,3 +767,19 @@
       border-color: transparent;
       color: #0982d3;
     }
+
+/* CALL FOR DIALOG
+---------------------------------------------------------------------------------------------------- */
+.call {
+
+}
+  .call_phone {
+    font-family: 'PFSquareSansProMedium';
+    font-size: 7.2rem;
+    margin-left: 4rem;
+  }
+  .call_cummary {
+    color: #a3a3a4;
+    font-size: 1.6rem;
+    margin-left: 4rem;
+  }

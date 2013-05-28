@@ -69,20 +69,7 @@ $(function() {
     $(this).parent('span').find('.catalog-filter_tooltip').remove();
   });
 
-  // Geo location
-  $('.header-logo_geo').click(function() {
-    $('.dialog__geo').fadeIn();
-    return false;
-  });
-  $('.dialog_close').click(function() {
-    $('.dialog__geo').fadeOut();
-    return false;
-  });
 
-});
-
-$(document).keyup(function(e) {
-  if (e.keyCode == 27) { $('.dialog__geo').fadeOut(); }
 });
 
 // DOCUMENT SCROLL
