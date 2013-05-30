@@ -103,8 +103,15 @@
 
 /* Reviews */
 .reviews {
-
+  position: relative;
+  z-index: 1000;
 }
+  .reviews_send {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+  }
   .reviews_i {
     margin-bottom: 2rem;
   }
@@ -115,23 +122,46 @@
       .reviews_i_user_date {
         color: #999;
       }
-    .reviews_i_hr {
-      background: #ccc;
-      height: .3rem;
-      margin-bottom: 2rem;
-      position: relative;
-      z-index: 1000;
+
+/* Reviews HR */
+.reviews_i_hr {
+  background: #ccc;
+  height: .3rem;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 1000;
+}
+.reviews_i_hr__colored {
+
+}
+  .reviews_i_hr__colored:after {
+    content: '';
+    background: #0982d3;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 180px;
+    z-index: 1001;
+  }
+
+/* Send reviews */
+.form-reviews {
+
+}
+  .form-reviews .form_label {
+    display: block;
+    margin-bottom: .5rem;
+  }
+  .form-reviews_name, .form-reviews_mail {
+
+  }
+  .form-reviews_name {
+    margin-right: 10px;
+  }
+    .form-reviews_name .form_text, .form-reviews_mail .form_text {
+      width: 260px;
     }
-      .reviews_i_hr:after {
-        content: '';
-        background: #0982d3;
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        width: 180px;
-        z-index: 1001;
-      }
 
 /* Tabs */
 .ui-tabs {
