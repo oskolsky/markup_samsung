@@ -286,6 +286,39 @@
         z-index: 1000;
       }
 
+/* REVIEWS
+---------------------------------------------------------------------------------------------------- */
+.reviews {
+
+}
+  .reviews_i {
+    margin-bottom: 2rem;
+  }
+    .reviews_i_user {
+      font-size: 1.2rem;
+      margin-bottom: .5rem;
+    }
+      .reviews_i_user_date {
+        color: #999;
+      }
+    .reviews_i_hr {
+      background: #ccc;
+      height: .3rem;
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 1000;
+    }
+      .reviews_i_hr:after {
+        content: '';
+        background: #0982d3;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 180px;
+        z-index: 1001;
+      }
+
 /* BASKET PAGE
 ---------------------------------------------------------------------------------------------------- */
 .page__basket {
