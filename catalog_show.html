@@ -232,5 +232,25 @@
     <!--#include virtual="/views/dialogs/_geo.html" -->
     <!--#include virtual="/views/dialogs/_call.html" -->
 
+    <script type="text/javascript">
+
+      // Star ratings
+      // http://wbotelhos.com/raty/
+      $('.rating_stars').raty({
+        starOff: '/img/star-off.png',
+        starOn:  '/img/star-on.png',
+        width: 70
+      });
+
+      $('.rating_stars-readonly').raty({
+        readOnly: true,
+        score: 3,
+        starOff: '/img/star-off.png',
+        starOn:  '/img/star-on.png',
+        width: 70
+      });
+
+    </script>
+
   </body>
 </html>
