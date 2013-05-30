@@ -1,0 +1,30 @@
+/* SHOP MAP
+---------------------------------------------------------------------------------------------------- */
+.page__shop-map {
+
+}
+
+/* Map */
+.map {
+  height: 300px;
+  margin-bottom: 6rem;
+  width: 100%;
+}
+
+/* Shop */
+.shops {
+
+}
+.shops_i {
+  margin-bottom: 4rem;
+}
+.shops_i:last-child {
+  margin-bottom: 0;
+}
+.shops_i_t {
+  margin-bottom: 1rem;
+}
+.shops_i_phone {
+  font-size: 2.4rem;
+  margin: .5rem 0;
+}
