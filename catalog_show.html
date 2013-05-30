@@ -204,19 +204,20 @@
               <h4>Оставить отзыв</h4>
               <div class="reviews_i_hr"></div>
               <form class="form" action="">
-                <div class="form_row mod form-reviews_name">
-                  <label class="form_label"><b>Ваше имя</b></label><input type="text" class="form_text">
-                </div><div class="form_row mod form-reviews_mail">
-                  <label class="form_label"><b>E-mail</b></label><input type="text" class="form_text">
-                </div>
                 <div class="cols">
                   <div class="cols-5 mod">
+                    <div class="form_row mod form-reviews_name">
+                      <label class="form_label"><b>Ваше имя</b></label><input type="text" class="form_text">
+                    </div><div class="form_row mod form-reviews_mail">
+                      <label class="form_label"><b>E-mail</b></label><input type="text" class="form_text">
+                    </div>
                     <div class="form_row"><label class="form_label"><b>Достоинства</b></label><textarea rows="3" class="form_textarea form_el__block"></textarea></div>
                     <div class="form_row"><label class="form_label"><b>Недостатки</b></label><textarea rows="3" class="form_textarea form_el__block"></textarea></div>
                     <div class="form_row"><label class="form_label"><b>Комментарий</b></label><textarea rows="3" class="form_textarea form_el__block"></textarea></div>
                     <a href="#" class="form_button form_button__ico form_button__send tt-uc">Отправить отзыв</a>
-                  </div><div class="cols-2 mod">
-
+                  </div><div class="cols-3 mod">
+                    <label class="rating-label"><b>Оценки</b></label>
+                    <!--#include virtual="/views/catalog/_rating.html" -->
                   </div>
                 </div>
               </form>

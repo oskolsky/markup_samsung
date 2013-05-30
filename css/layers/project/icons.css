@@ -1,5 +1,14 @@
 /* ICON
 ---------------------------------------------------------------------------------------------------- */
+.ico-13 {
+  background: url(/img/ico-13.png) 0 0;
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+}
+.ico-13__star-enable  {background-position: 0 0;}
+.ico-13__star-disable {background-position: -13px 0;}
+
 .ico-14 {
   background: url(/img/ico-14.png) 0 0;
   display: inline-block;

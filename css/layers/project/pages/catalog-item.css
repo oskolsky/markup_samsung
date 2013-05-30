@@ -123,6 +123,32 @@
         color: #999;
       }
 
+/* Rating */
+.rating-label {
+  margin-top: .3rem;
+  padding-left: 25px;
+}
+.rating {
+  padding-left: 25px;
+}
+  .rating_i {
+
+  }
+    .rating_stars {
+      display: inline-block;
+      font-size: 0;
+      margin-right: 5px;
+    }
+      .rating_stars_i {
+        position: relative;
+        top: 3px;
+        z-index: 1000;
+      }
+    .rating_title {
+      font-size: 1.2rem;
+      display: inline-block;
+    }
+
 /* Reviews HR */
 .reviews_i_hr {
   background: #ccc;
