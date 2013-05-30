@@ -10,8 +10,12 @@ $(function() {
     });
 
     myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-      content:'Москва!',
-      balloonContent:'Столица России'
+      content:         'ТРК «Континент» на Звездной',
+      balloonContent:  'ТРК «Континент» на Звездной',
+    }, {
+      iconImageHref:   '/img/placemark.png',
+      iconImageSize:   [21, 30]
+//      iconImageOffset: [-3, -42]
     });
 
     myMap.geoObjects.add(myPlacemark);
