@@ -14,14 +14,16 @@
       <div class="ctn">
 
         <section class="error-404">
-          <div class="cols">
-            <div class="cols-6 offset-1">
-              <h1 class="error-404_t">Извините, но страница не найдена</h1>
-              <p class="error-404_p">Вернитесь на главную страницу или воспользуйтесь поиском:</p>
-              <form class="form">
-                <input type="text" class="form_text form_text__search error-404_input">
-                <a href="#" class="form_button form_button__ico form_button__search tt-uc">Искать</a>
-              </form>
+          <div class="error-404_cnt">
+            <div class="cols">
+              <div class="cols-6 offset-1">
+                <h1 class="error-404_t">Извините, но страница не найдена</h1>
+                <p class="error-404_p"><a href="/" class="error-404_a">Вернитесь на главную страницу</a> или воспользуйтесь поиском:</p>
+                <form class="form">
+                  <input type="text" class="form_text form_text__search error-404_input">
+                  <a href="#" class="form_button form_button__ico form_button__search tt-uc">Искать</a>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -38,6 +40,23 @@
 
     <!--#include virtual="/views/layouts/_footer.html" -->
     <!--#include virtual="/views/dialogs/_geo.html" -->
+
+    <script type="text/javascript">
+      $(function() {
+
+        var
+            headerH = $('.header').outerHeight(),
+            navbarH = $('.navbar').outerHeight(),
+            menuH   = $('.menu').outerHeight(),
+            windowH = $(window).outerHeight(),
+            height  = 0;
+
+        height = windowH - (headerH + navbarH + menuH) - 200;
+
+        $('.error-404').css({height: height + 'px'});
+
+      });
+    </script>
 
   </body>
 </html>

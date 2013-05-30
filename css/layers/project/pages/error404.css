@@ -1,16 +1,32 @@
 /* 404 PAGE
 ---------------------------------------------------------------------------------------------------- */
 .error-404 {
-  /*margin: 14.5rem 0 13.5rem;*/
+  min-height: 250px;
+  position: relative;
+  z-index: 1000;
 }
-  .error-404_t {
-    margin-bottom: 2rem;
+  .error-404_cnt {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -80%);
+       -moz-transform: translate(0, -80%);
+        -ms-transform: translate(0, -80%);
+         -o-transform: translate(0, -80%);
+            transform: translate(0, -80%);
+    width: 100%;
+    z-index: 1001;
   }
-  .error-404_p {
-    font-size: 1.6rem;
-    margin-bottom: 1.2rem;
-  }
-  .error-404_input {
-    margin-right: 10px;
-    width: 490px;
-  }
+    .error-404_t {
+      margin-bottom: 2rem;
+    }
+    .error-404_p {
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+    }
+      .error-404_a {
+        text-decoration: none;
+      }
+    .error-404_input {
+      margin-right: 10px;
+      width: 490px;
+    }
