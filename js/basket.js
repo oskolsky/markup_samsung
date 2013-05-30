@@ -18,7 +18,7 @@ $(function() {
     $(this).closest('.basket-goods-i').find('.basket-goods-i-count_input').val(count);
     summ = (price * count).formatMoney();
     $(this).closest('.basket-goods-i').find('.show-price_sum').text(summ);
-    $(this).closest('.basket-goods-i').find('.js-summary-info').text(count + ' x ' + summ + ' руб.');
+    $(this).closest('.basket-goods-i').find('.js-summary-info').text(count + ' x ' + price.formatMoney() + ' руб.');
     totalPrice();
   });
 
@@ -30,7 +30,7 @@ $(function() {
       $(this).closest('.basket-goods-i').find('.basket-goods-i-count_input').val(count);
       summ = (price * count).formatMoney();
       $(this).closest('.basket-goods-i').find('.show-price_sum').text(summ);
-      $(this).closest('.basket-goods-i').find('.js-summary-info').text(count + ' x ' + summ + ' руб.');
+      $(this).closest('.basket-goods-i').find('.js-summary-info').text(count + ' x ' + price.formatMoney() + ' руб.');
       totalPrice();
     }
   });
