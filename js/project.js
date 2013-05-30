@@ -7,13 +7,17 @@ $(function() {
   $('#tabs').tabs();
 
   $('.js-tabs-open').click(function(event) {
-    var tab = $(this).attr('href');
     $('#tabs').tabs({'active': 1});
-    var destination = $(tab).offset().top;
-    $('html, body').animate({scrollTop: destination}, 500);    
     return false;
   });
-  
+
+  // Scroll to
+  $('.js-scroll-to').click(function() {
+    var el = $(this).attr('href');
+    var destination = $(el).offset().top;
+    $('html, body').animate({scrollTop: destination}, 500);
+    return false;
+  });
 
   // Money format for price
   $('.js-price-format').each(function() {
