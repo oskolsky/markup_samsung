@@ -1,0 +1,82 @@
+/* DIALOG
+---------------------------------------------------------------------------------------------------- */
+.dialog {
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 0 5rem .5rem #bababa;
+  display: none;
+  padding: 3rem 0;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+    -moz-transform:  translate(-50%, -50%);
+     -ms-transform:  translate(-50%, -50%);
+      -o-transform:  translate(-50%, -50%);
+         transform:  translate(-50%, -50%);
+  width: 640px;
+  z-index: 9999;
+}
+  .dialog_close {
+    height: 23px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 23px;
+    z-index: 9999;
+  }
+  .dialog_title {
+    border-bottom: 3px solid #0982d3;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+    margin-left: 4rem;
+  }
+  .dialog_remember {
+    cursor: pointer;
+    margin-left: 4rem;
+    position: relative;
+    top: 1rem;
+  }
+    .dialog_remember .form_el__fake {
+      position: relative;
+      top: 3px;
+    }
+
+/* LOCATION FOR DIALOG
+---------------------------------------------------------------------------------------------------- */
+.location {
+
+}
+  .location_i {
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+  }
+    .location_a {
+      border-bottom: 1px dashed #000;
+      color: #323536;
+      font-size: 1.6rem;
+      text-decoration: none;
+    }
+    .location_a:hover {
+      color: #323536;
+    }
+    .location_a__current, .location_a__current:hover {
+      border-color: transparent;
+      color: #0982d3;
+    }
+
+/* CALL FOR DIALOG
+---------------------------------------------------------------------------------------------------- */
+.call {
+
+}
+  .call_phone {
+    font-family: 'PFSquareSansProMedium';
+    font-size: 7.2rem;
+    margin-left: 4rem;
+  }
+  .call_cummary {
+    color: #a3a3a4;
+    font-size: 1.6rem;
+    margin-left: 4rem;
+  }

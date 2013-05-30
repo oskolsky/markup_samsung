@@ -1,0 +1,16 @@
+/* 404 PAGE
+---------------------------------------------------------------------------------------------------- */
+.error-404 {
+  margin: 14.5rem 0 13.5rem;
+}
+  .error-404_t {
+    margin-bottom: 2rem;
+  }
+  .error-404_p {
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+  }
+  .error-404_input {
+    margin-right: 10px;
+    width: 490px;
+  }

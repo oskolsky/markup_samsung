@@ -14,6 +14,18 @@
 @import "/css/layers/project/layout.css" all;
 @import "/css/layers/project/unit.css" all;
 @import "/css/layers/project/icons.css" all;
+@import "/css/layers/project/dialog.css" all;
+
+/* Pages */
+@import "/css/layers/project/pages/index.css" all;
+@import "/css/layers/project/pages/news.css" all;
+@import "/css/layers/project/pages/article.css" all;
+@import "/css/layers/project/pages/catalog.css" all;
+@import "/css/layers/project/pages/catalog-item.css" all;
+@import "/css/layers/project/pages/basket.css" all;
+@import "/css/layers/project/pages/search.css" all;
+@import "/css/layers/project/pages/error404.css" all;
+
 @import "/css/layers/project/project.css" all;
 
 /* RESPONSIVE
