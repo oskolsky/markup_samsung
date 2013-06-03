@@ -118,6 +118,7 @@
     font-weight: 700;
     line-height: 1.8rem;
     letter-spacing: -1px;
+    white-space: nowrap;
   }
   .header-phone_time {
     color: #a3a3a4;
