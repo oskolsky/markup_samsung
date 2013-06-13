@@ -18,6 +18,7 @@
 
 /* Pages */
 @import "/css/layers/project/pages/index.css" all;
+@import "/css/layers/project/pages/content.css" all;
 @import "/css/layers/project/pages/news.css" all;
 @import "/css/layers/project/pages/article.css" all;
 @import "/css/layers/project/pages/catalog.css" all;
