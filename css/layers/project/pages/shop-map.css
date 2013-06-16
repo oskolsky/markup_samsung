@@ -7,8 +7,18 @@
 /* Map */
 .yandex-map {
   height: 300px;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
   width: 100%;
+}
+
+/* Shop filter */
+.shops-filter {
+  margin-bottom: 2rem;
+}
+.shop-filter_noctidial {
+  position: relative;
+  top: 2.2rem;
+  z-index: 1000;
 }
 
 /* Shop */
@@ -16,15 +26,67 @@
 
 }
 .shops_i {
-  margin-bottom: 4rem;
+  border-top: 1px solid #ececec;
+  padding: 2rem 0;
 }
 .shops_i:last-child {
   margin-bottom: 0;
 }
+.shops_i_metro {
+  margin-top: .7rem;
+}
 .shops_i_t {
+  margin-bottom: .5rem;
+}
+.shops_i_t > a {
+  text-decoration: none;
+}
+.shops_i_t > a:hover {
+  text-decoration: underline;
+}
+.shops_i_caption {
   margin-bottom: 1rem;
 }
-.shops_i_phone {
-  font-size: 2.4rem;
-  margin: .5rem 0;
+.shops_i_datetime {
+  margin-bottom: 1rem;
 }
+.shops_i_datetime_t {
+  font-size: 2.4rem;
+}
+.shops_i_datetime_t sup {
+  font-size: 1.4rem;
+}
+
+/* Branch */
+.shops_i_branch {
+  height: 7px;
+  margin-top: 1rem;
+  position: relative;
+  width: 53px;
+  z-index: 1000;
+}
+.shops_i_branch:before {
+  background: #fff;
+  border: 5px solid;
+  border-radius: 50%;
+  content: '';
+  height: 9px;
+  left: 17px;
+  position: absolute;
+  top: -6px;
+  width: 9px;
+  z-index: 1001;
+}
+
+/* Green */
+.shops_i_branch.__green {background: #00a81c;}
+.shops_i_branch.__green:before {border-color: #00a81c;}
+
+/* Orange */
+.shops_i_branch.__orange {background: #f67821;}
+.shops_i_branch.__orange:before {border-color: #f67821;}
+
+/* Purple */
+.shops_i_branch.__purple {background: #863896;}
+.shops_i_branch.__purple:before {border-color: #863896;}
+

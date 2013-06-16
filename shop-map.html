@@ -22,20 +22,52 @@
         </header>
         <section>
           <div id="map" class="yandex-map"></div>
-          <div class="shops">
-            <div class="cols">
-              <div class="cols-4 mod">
-                <!--#include virtual="/views/shop/_item.html" -->
-                <!--#include virtual="/views/shop/_item.html" -->
-                <!--#include virtual="/views/shop/_item.html" -->
-                <!--#include virtual="/views/shop/_item.html" -->
-              </div><div class="cols-4 mod">
-                <!--#include virtual="/views/shop/_item.html" -->
-                <!--#include virtual="/views/shop/_item.html" -->
-                <!--#include virtual="/views/shop/_item.html" -->
-                <!--#include virtual="/views/shop/_item.html" -->
+          <div class="shops-filter">
+            <form class="form" action="">
+              <div class="cols">
+                <div class="cols-2 mod">
+                  <label class="form_label"><b>Линия метро</b></label>
+                  <div class="form_select__fake form_el__fake form_el__block">
+                    <p>&nbsp;</p>
+                    <select class="form_select__real form_el__real">
+                      <option>Замоскворецкая</option>
+                      <option>Замоскворецкая</option>
+                      <option>Замоскворецкая</option>
+                    </select>
+                  </div>
+                </div><div class="cols-2 mod">
+                  <label class="form_label"><b>Станция</b></label>
+                  <div class="form_select__fake form_el__fake form_el__block">
+                    <p>&nbsp;</p>
+                    <select class="form_select__real form_el__real">
+                      <option>Автозаводская</option>
+                      <option>Автозаводская</option>
+                      <option>Автозаводская</option>
+                    </select>
+                  </div>
+                </div><div class="cols-2 mod">
+                  <label class="form_label"><b>Улица</b></label>
+                  <div class="form_select__fake form_el__fake form_el__block">
+                    <p>&nbsp;</p>
+                    <select class="form_select__real form_el__real">
+                      <option>Автозаводская</option>
+                      <option>Автозаводская</option>
+                      <option>Автозаводская</option>
+                    </select>
+                  </div>
+                </div><div class="cols-2 mod">
+                  <label class="shop-filter_noctidial form_label form_el__block"><span class="form_checkbox__fake form_el__fake"><input type="checkbox" class="form_checkbox__real form_el__real"></span> Круглосуточные</label>
+                </div>
               </div>
-            </div>
+            </form>
+          </div>
+          <div class="shops">
+            <!--#include virtual="/views/shop/_item.html" -->
+            <!--#include virtual="/views/shop/_item.html" -->
+            <!--#include virtual="/views/shop/_item.html" -->
+            <!--#include virtual="/views/shop/_item.html" -->
+            <!--#include virtual="/views/shop/_item.html" -->
+            <!--#include virtual="/views/shop/_item.html" -->
           </div>
         </section>
       </div>
