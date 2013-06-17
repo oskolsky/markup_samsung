@@ -82,11 +82,42 @@
 .shops_i_branch.__green {background: #00a81c;}
 .shops_i_branch.__green:before {border-color: #00a81c;}
 
-/* Orange */
-.shops_i_branch.__orange {background: #f67821;}
-.shops_i_branch.__orange:before {border-color: #f67821;}
+/* Cyan */
+.shops_i_branch.__cyan {background: #09bdf3;}
+.shops_i_branch.__cyan:before {border-color: #09bdf3;}
+
+/* Blue */
+.shops_i_branch.__blue {background: #006cb9;}
+.shops_i_branch.__blue:before {border-color: #006cb9;}
 
 /* Purple */
 .shops_i_branch.__purple {background: #863896;}
 .shops_i_branch.__purple:before {border-color: #863896;}
 
+/* Gray */
+.shops_i_branch.__gray {background: #999;}
+.shops_i_branch.__gray:before {border-color: #999;}
+
+/* Lightgreen */
+.shops_i_branch.__lightgreen {background: #add136;}
+.shops_i_branch.__lightgreen:before {border-color: #add136;}
+
+/* Orange */
+.shops_i_branch.__orange {background: #f67821;}
+.shops_i_branch.__orange:before {border-color: #f67821;}
+
+/* Red */
+.shops_i_branch.__red {background: #ed1f15;}
+.shops_i_branch.__red:before {border-color: #ed1f15;}
+
+/* Brown */
+.shops_i_branch.__brown {background: #874a30;}
+.shops_i_branch.__brown:before {border-color: #874a30;}
+
+/* Yellow */
+.shops_i_branch.__yellow {background: #fdcb2d;}
+.shops_i_branch.__yellow:before {border-color: #fdcb2d;}
+
+/* Grayblue */
+.shops_i_branch.__grayblue {background: #a6bce2;}
+.shops_i_branch.__grayblue:before {border-color: #a6bce2;}
