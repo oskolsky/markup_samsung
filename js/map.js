@@ -9,6 +9,10 @@ $(function() {
       zoom: 14
     });
 
+    myMap.controls.add(
+      new ymaps.control.ZoomControl()
+    );
+
     myPlacemark = new ymaps.Placemark([55.76, 37.64], {
       content:         'ТРК «Континент» на Звездной',
       balloonContent:  'ТРК «Континент» на Звездной',
