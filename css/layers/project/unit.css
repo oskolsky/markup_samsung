@@ -19,7 +19,9 @@
   }
   .unit_a {
     display: block;
+    height: 185px;
     text-align: center;
+    width: 185px;
   }
     .unit_img {
       vertical-align: top;

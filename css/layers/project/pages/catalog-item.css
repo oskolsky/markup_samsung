@@ -20,8 +20,12 @@
         border: 1px solid #e8e8e8;
         display: inline-block;
         height: 45px;
+        line-height: 45px;
         margin: 0 10px 20px 10px;
         width: 45px;
+      }
+      .gallery-nav_i img {
+        vertical-align: middle;
       }
       .gallery-nav_i__current {
         border: 1px solid #00b7ef;
