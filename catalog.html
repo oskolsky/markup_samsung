@@ -148,6 +148,21 @@
 
         $('.catalog-filter_amount__min').val($("#slider-range").slider("values", 0));
         $('.catalog-filter_amount__max').val($("#slider-range").slider("values", 1));
+
+        $('.catalog-filter_amount__min').keyup(function() {
+          var
+              min = this.value,
+              max = $('.catalog-filter_amount__max').val();
+          $('#slider-range').slider({values: [min, max]});
+        });
+
+        $('.catalog-filter_amount__max').keyup(function() {
+          var
+              min = $('.catalog-filter_amount__min').val(),
+              max = this.value;
+          $('#slider-range').slider({values: [min, max]});
+        });
+
       });
     </script>
 
