@@ -56,6 +56,23 @@
                   </section>
 
                   <section class="catalog-filter_section catalog-filter_section__bordered">
+                    <h6 class="catalog-filter_t"><span class="p-r" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor hendrerit nisi, non elementum orci ultricies ut.">Цена, руб<a href="#" class="catalog-filter_help">?</a></span></h6>
+                    <div class="catalog-filter_range">
+                      <div id="slider-range"></div>
+                      <div class="clearfix">
+                        <div class="f-l">
+                          <b>от</b>
+                          <input type="text" class="form_text catalog-filter_amount catalog-filter_amount__min">
+                        </div>
+                        <div class="f-r">
+                          <b>до</b>
+                          <input type="text" class="form_text catalog-filter_amount catalog-filter_amount__max">
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+
+                  <section class="catalog-filter_section catalog-filter_section__bordered">
                     <h6 class="catalog-filter_t"><span class="p-r" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor hendrerit nisi, non elementum orci ultricies ut.">ОС<a href="#" class="catalog-filter_help">?</a></span></h6>
                     <label class="form_label"><span class="form_checkbox__fake form_el__fake"><input type="checkbox" class="form_checkbox__real form_el__real"></span> Windows Phone</label>
                     <label class="form_label"><span class="form_checkbox__fake form_el__fake"><input type="checkbox" class="form_checkbox__real form_el__real"></span> Samsung OS</label>
@@ -114,6 +131,25 @@
 
     <!--#include virtual="/views/layouts/_footer.html" -->
     <!--#include virtual="/views/dialogs/_geo.html" -->
+
+    <script type="text/javascript">
+      $(function() {
+        $('#slider-range').slider({
+          range: true,
+          min: 0,
+          max: 999999,
+          step: 50,
+          values: [0, 999999],
+          slide: function( event, ui ) {
+            $('.catalog-filter_amount__min').val(ui.values[0]);
+            $('.catalog-filter_amount__max').val(ui.values[1]);
+          }
+        });
+
+        $('.catalog-filter_amount__min').val($("#slider-range").slider("values", 0));
+        $('.catalog-filter_amount__max').val($("#slider-range").slider("values", 1));
+      });
+    </script>
 
   </body>
 </html>
