@@ -75,6 +75,7 @@
         .catalog-filter_t {
           font-weight: 700;
           margin-bottom: .7rem;
+          padding-left: 1.5rem;
           position: relative;
           z-index: 9999;
         }
@@ -84,9 +85,9 @@
             color: #fff;
             height: 10px;
             font-size: .8rem;
+            left: 0;
             line-height: 10px;
             position: absolute;
-            right: -12px;
             top: 4px;
             text-align: center;
             text-decoration: none;
