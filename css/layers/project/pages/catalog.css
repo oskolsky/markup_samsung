@@ -75,20 +75,22 @@
         .catalog-filter_t {
           font-weight: 700;
           margin-bottom: .7rem;
-          padding-left: 1.5rem;
           position: relative;
           z-index: 9999;
         }
+          .catalog-filter_t span {
+            position: relative;
+          }
           .catalog-filter_help {
             background: #00a9e0;
             border-radius: 50%;
+            bottom: 1rem;
             color: #fff;
             height: 10px;
             font-size: .8rem;
-            left: 0;
             line-height: 10px;
             position: absolute;
-            top: 4px;
+            right: -1.4rem;
             text-align: center;
             text-decoration: none;
             width: 10px;
