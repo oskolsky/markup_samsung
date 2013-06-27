@@ -1,0 +1,27 @@
+<div class="cols-6 offset-1 mod m-b_4">
+  <div class="cols-5 offset-1 mod thanks-t"><p><b>Адрес пункта самовывоза</b></p></div>
+  <div class="thanks-map">
+    <div id="map" style="width: 100%; height: 355px"></div>
+    <a href="#" class="form_button form_button__inbag tt-uc thanks-map_print">Распечатать</a>
+  </div>
+</div>
+
+<script type="text/javascript">
+  $(function() {
+    // Map init
+    ymaps.ready(init);
+    var myMap,
+      myPlacemark;
+    function init(){
+      myMap = new ymaps.Map ("map", {
+        center: [55.76, 37.64],
+        zoom: 14
+      });
+      myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+        balloonContentHeader: '<a href="#">re:Store</a>',
+        balloonContentBody: '<p><i>190000, Санкт-Петербург, просп. Культуры</i><p><b>+7 (812) 677-42-33</b></p><p class="tx__muted tx__small">Компьютерная переферия и акксесуары</p>'
+      });
+      myMap.geoObjects.add(myPlacemark);
+    }
+  });
+</script>

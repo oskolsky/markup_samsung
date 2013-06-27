@@ -21,66 +21,13 @@
             <p>Все детали уже высланы на адрес vladlen@kremlin.ru.</p>
           </article>
         </header>
-
         <section class="thanks_b">
-
-          <div class="cols-6 offset-1 mod __bordered m-b_6">
-            <div class="cols-5 offset-1 mod thanks-t"><p><b>Заказ №12382 231 231 от 12 января 2013 г.</b></p></div>
-            <div class="thanks-goods">
-              <!--#include virtual="/views/thanks/_item.html" -->
-              <!--#include virtual="/views/thanks/_item.html" -->
-            </div>
-
-            <div class="thanks-summary">
-              <div class="thanks-summary_i">
-                <div class="cols">
-                  <div class="cols-3 mod">
-                    <p><span class="thanks-summary_i_label">Бонусная карта</span> <b class="tx__large">3243-34234-23423</b></p>
-                  </div><div class="cols-1 mod">
-                    <p class="ta-r">Цена</p>
-                  </div><div class="cols-2 mod">
-                    <div class="show-price"><div class="show-price_sum price price__rub js-price-format">25590</div></div>
-                  </div>
-                </div>
-              </div>
-              <div class="thanks-summary_i">
-                <div class="cols">
-                  <div class="cols-3 mod">
-                    <p><span class="thanks-summary_i_label">Карта Много.ру</span> <b class="tx__large">2342-1465-7646</b></p>
-                  </div><div class="cols-1 mod">
-                    <p class="ta-r">Доставка</p>
-                  </div><div class="cols-2 mod">
-                    <p class="tx__large"><b>Бесплатно</b></p>
-                  </div>
-                </div>
-              </div>
-              <div class="thanks-summary_i">
-                <div class="cols">
-                  <div class="cols-3 mod">
-                    <p><span class="thanks-summary_i_label">Бонусный код </span> <b class="tx__large">RESR777</b></p>
-                  </div><div class="cols-1 mod">
-                    <p class="ta-r tx__color">Итого</p>
-                  </div><div class="cols-2 mod">
-                    <div class="show-price"><div class="show-price_sum price price__rub js-price-format tx__color">25590</div></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="cols-6 offset-1 mod m-b_4">
-            <div class="cols-5 offset-1 mod thanks-t"><p><b>Адрес пункта самовывоза</b></p></div>
-            <div class="thanks-map">
-              <div id="map" style="width: 100%; height: 355px"></div>
-              <a href="#" class="form_button form_button__inbag tt-uc thanks-map_print">Распечатать</a>
-            </div>
-          </div>
-
+          <!--#include virtual="/views/thanks/_goods.html" -->
+          <!--#include virtual="/views/thanks/_map.html" -->
           <div class="cols-6 offset-1 mod">
             <div class="cols">
               <div class="cols-3 mod">
-                <img src="/img/manager.png" alt="">                                    
+                <img src="/img/manager-1.png" alt="">
               </div><div class="cols-3 mod">
                 <article class="thanks_manager">
                   <p class="m-b_2">Сергей, менеджер компании, свяжется с&nbsp;Вами в&nbsp;ближайшее рабочее время.</p>
@@ -89,34 +36,12 @@
               </div>
             </div>
           </div>
-
         </section>
-
       </div>
     </section>
 
     <!--#include virtual="/views/layouts/_footer.html" -->
     <!--#include virtual="/views/dialogs/_geo.html" -->
-
-    <script type="text/javascript">
-      $(function() {
-        // Map init
-        ymaps.ready(init);
-        var myMap,
-          myPlacemark;
-        function init(){
-          myMap = new ymaps.Map ("map", {
-            center: [55.76, 37.64],
-            zoom: 14
-          });
-          myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-            balloonContentHeader: '<a href="#">re:Store</a>',
-            balloonContentBody: '<p><i>190000, Санкт-Петербург, просп. Культуры</i><p><b>+7 (812) 677-42-33</b></p><p class="tx__muted tx__small">Компьютерная переферия и акксесуары</p>'
-          });
-          myMap.geoObjects.add(myPlacemark);
-        }
-      });
-    </script>
 
   </body>
 </html>
