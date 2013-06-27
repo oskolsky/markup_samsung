@@ -4,6 +4,7 @@
   <head>
     <title>Спасибо / SAMSUNG Фирменные магазины</title>
     <!--#include virtual="/views/layouts/_head.html" -->
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
   </head>
   <body class="page__thanks">
 
@@ -22,13 +23,32 @@
         </header>
         <section class="thanks_b">
 
-          <div class="cols-6 offset-1 mod __bordered">
+          <div class="cols-6 offset-1 mod __bordered m-b_6">
+            <div class="cols-5 offset-1 mod thanks-order"><p><b>Заказ №12382 231 231 от 12 января 2013 г.</b></p></div>
+            <div class="thanks-goods">
+              <!--#include virtual="/views/thanks/_item.html" -->
+              <!--#include virtual="/views/thanks/_item.html" -->
+            </div>
+          </div>
+
+          <div class="cols-6 offset-1 mod m-b_4">
+            <div class="cols-5 offset-1 mod thanks-order"><p><b>Адрес пункта самовывоза</b></p></div>
+            <div id="map" style="width: 100%; height: 355px"></div>
+          </div>
+
+          <div class="cols-6 offset-1 mod">
             <div class="cols">
+              <div class="cols-3 mod">
+                <img src="/img/manager.png" alt="">                                    
+              </div><div class="cols-3 mod">
+                <article class="thanks_manager">
+                  <p class="m-b_2">Сергей, менеджер компании, свяжется с&nbsp;Вами в&nbsp;ближайшее рабочее время.</p>
+                  <p class="tx__color">Обращаем ваше внимание, что самовывоз возможен только при вашем подтверждении и&nbsp;ответе на&nbsp;звонок&nbsp;&mdash; в&nbsp;противном случае товара может не&nbsp;оказаться на&nbsp;складе!</p>
+                </article>
+              </div>
+            </div>
+          </div>
 
-              <div class="cols-5 offset-1 mod"><p><b>Заказ №12382 231 231 от 12 января 2013 г.</b></p></div>
-
-              <!--#include virtual="/views/thanks/_item.html" -->
-              <!--#include virtual="/views/thanks/_item.html" -->
 
               <!--<div class="cols-3 mod">-->
                 <!--<p>Бонусная карта: <b class="tx__large">3243-34234-23423</b></p>-->
@@ -54,8 +74,8 @@
                 <!--<div class="show-price"><div class="show-price_sum price price__rub js-price-format">25590</div></div>-->
               <!--</div>-->
 
-            </div>
-          </div>
+            <!--</div>-->
+          <!--</div>-->
 
         </section>
 
@@ -64,6 +84,26 @@
 
     <!--#include virtual="/views/layouts/_footer.html" -->
     <!--#include virtual="/views/dialogs/_geo.html" -->
+
+    <script type="text/javascript">
+      $(function() {
+        // Map init
+        ymaps.ready(init);
+        var myMap,
+          myPlacemark;
+        function init(){
+          myMap = new ymaps.Map ("map", {
+            center: [55.76, 37.64],
+            zoom: 14
+          });
+          myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+            content: 'Санкт-Петербург, площадь Восстания, д.3.',
+            balloonContent: 'Время работы — с 9:00 до 19:00'
+          });
+          myMap.geoObjects.add(myPlacemark);
+        }
+      });
+    </script>
 
   </body>
 </html>
