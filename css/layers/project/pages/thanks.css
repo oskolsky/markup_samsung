@@ -22,8 +22,8 @@
 
 }
 
-/* Order */
-.thanks-order {
+/* Title */
+.thanks-t {
   margin-bottom: 2rem;
 }
 
@@ -55,6 +55,22 @@
 }
 .thanks-summary_i .show-price {
   margin-top: -.6rem;
+}
+
+/* Map */
+.thanks-map {
+  position: relative;
+}
+.thanks-map_print {
+  border: 4px solid #f8f8f8;
+  left: 50%;
+  position: absolute;
+  top: 339px;
+	-webkit-transform: translate(-50%, 0);
+  -moz-transform:    translate(-50%, 0);
+  -ms-transform:     translate(-50%, 0);
+  -o-transform:      translate(-50%, 0);
+  transform:         translate(-50%, 0);
 }
 
 /* Manager */
