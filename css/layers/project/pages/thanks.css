@@ -31,12 +31,30 @@
 .thanks-goods {
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 2rem;
 }
 .thanks-goods_i {
   padding: 2rem 0;
 }
 .thanks-goods_i_img {
   vertical-align: top;
+}
+
+/* Summary */
+.thanks-summary {
+
+}
+.thanks-summary_i {
+  height: 2rem;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+.thanks-summary_i_label {
+  display: inline-block;
+  width: 11rem;
+}
+.thanks-summary_i .show-price {
+  margin-top: -.6rem;
 }
 
 /* Manager */
