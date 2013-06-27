@@ -385,3 +385,20 @@ sup {
   .progress__none:before {
     content: 'нет';
   }
+
+/* BORDERED
+---------------------------------------------------------------------------------------------------- */
+.__bordered {
+  position: relative;
+}
+.__bordered:before {
+  border: 2px solid #0982d3;
+  border-radius: 1.2rem;
+  bottom: -2rem;
+  content: '';
+  left: -2rem;
+  position: absolute;
+  right: -2rem;
+  top: -2rem;
+  z-index: -1;
+}

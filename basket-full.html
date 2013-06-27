@@ -87,14 +87,97 @@
 
             <section class="basket-i basket-i_payment basket-i__open">
               <header class="basket-i-h"><span class="basket-i-h_n">3</span>Как оплатить</header>
+
               <section class="basket-i-b">
                 <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Наличными курьеру</label>
                 <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Безналичный расчет для юр. лиц</label>
                 <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Кредитная карта курьеру</label>
-                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Оформление товара в кредит</label>
+                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2" id="open-credit-form"></span> Оформление товара в кредит</label>
                 <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Кредитной картой через интернет</label>
                 <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Банковский перевод</label>
               </section>
+
+              <section class="credit-profile">
+                <div class="cols">
+                  <div class="cols-6 mod">
+                    <h4 class="credit-profile_t">Заполните кредитную анкету</h4>
+                    <div class="credit-profile_form __bordered">
+                      <fieldset class="m-b_2">
+                        <h6 class="credit-profile_form_legend">Паспортные данные</h6>
+                        <div class="cols">
+                          <div class="cols-3 mod">
+                            <div class="form_row">
+                              <label class="form_label credit-profile_form_lable">Фамилия</label>
+                              <input type="text" class="form_text form_el__block">
+                            </div>
+                            <div class="form_row">
+                              <label class="form_label credit-profile_form_lable">Имя</label>
+                              <input type="text" class="form_text form_el__block">
+                            </div>
+                            <div class="form_row">
+                              <label class="form_label credit-profile_form_lable">Отчество</label>
+                              <input type="text" class="form_text form_el__block">
+                            </div>
+                          </div><div class="cols-3 mod">
+                            <div class="form_row">
+                              <label class="form_label credit-profile_form_lable">Серия и номер паспорта</label>
+                              <input type="text" class="form_text form_el__block">
+                            </div>
+                            <div class="form_row">
+                              <label class="form_label credit-profile_form_lable">Кем выдан</label>
+                              <input type="text" class="form_text form_el__block">
+                            </div>
+                          </div><div class="cols-2 mod">
+                            <div class="form_row">
+                              <label class="form_label credit-profile_form_lable">Дата рождения</label>
+                              <input type="text" class="form_text form_el__block" placeholder="дд.мм.гггг">
+                            </div>
+                          </div><div class="cols-2 mod">
+                          <label class="form_label credit-profile_form_lable">Город</label>
+                            <div class="form_select__fake form_el__fake form_el__block">
+                              <p>&nbsp;</p>
+                              <select class="form_select__real form_el__real">
+                                <option selected>Выберите</option>
+                                <option>Санкт-Петербург</option>
+                                <option>Москва</option>
+                                <option>Воронеж</option>
+                              </select>
+                            </div>
+                          </div><div class="cols-2 mod">
+                            <div class="form_row">
+                              <label class="form_label credit-profile_form_lable">Телефон</label>
+                              <input type="text" class="form_text form_el__block">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <fieldset>
+                        <h6 class="credit-profile_form_legend">Информация о работе</h6>
+                        <div class="cols">
+                          <div class="cols-3 mod">
+                            <div class="form_row">
+                              <label class="form_label credit-profile_form_lable">Название организации</label>
+                              <input type="text" class="form_text form_el__block">
+                            </div>
+                          </div><div class="cols-3 mod">
+                            <div class="form_row">
+                              <label class="form_label credit-profile_form_lable">Телефон организации</label>
+                              <input type="text" class="form_text form_el__block">
+                            </div>
+                          </div>
+                        </div>
+                      </fieldset>
+                      <label class="form_label"><span class="form_checkbox__fake form_el__fake"><input type="checkbox" class="form_checkbox__real form_el__real"></span> Я согласен на передачу моих персональных данных в Альфа-банк</label>
+                    </div>
+                  </div><div class="cols-2 mod">
+                    <article class="credit-profile_tx">
+                      <p>Кредит оформляется в&nbsp;банке Альфа-Банк. Чтобы подать заявку, вам надо заполнить все поля, приведённые ниже.</p>
+                      <p>Рассмотрение вашей заявки займёт от&nbsp;10&nbsp;минут до&nbsp;часа, после чего с&nbsp;вами свяжутся, чтобы сообщить результат рассмотрения; и&nbsp;уточнить, в&nbsp;кредит вы&nbsp;покупаете или в&nbsp;рассрочку, на&nbsp;какой срок оформляется кредит и&nbsp;размер первого взноса. (Если вы&nbsp;подадите заявку ночью, она будет рассмотрена после 7&nbsp;утра.)</p>
+                    </article>
+                  </div>
+                </div>
+              </section>
+
             </section>
 
             <section class="basket-i basket-i_confirmation basket-i__open">
@@ -133,20 +216,30 @@
     <!--#include virtual="/views/dialogs/_geo.html" -->
 
     <script type="text/javascript">
-      ymaps.ready(init);
-      var myMap,
-        myPlacemark;
-      function init(){
-        myMap = new ymaps.Map ("map", {
-          center: [55.76, 37.64],
-          zoom: 14
+      $(function() {
+
+        // Form credit show & hide
+        $('.form_radio__real').change(function() {
+          $('#open-credit-form').prop('checked') ? $('.credit-profile').show() : $('.credit-profile').hide();
         });
-        myPlacemark = new ymaps.Placemark([55.76, 37.64], {
-          content: 'Санкт-Петербург, площадь Восстания, д.3.',
-          balloonContent: 'Время работы — с 9:00 до 19:00'
-        });
-        myMap.geoObjects.add(myPlacemark);
-      }
+
+        // Map init
+        ymaps.ready(init);
+        var myMap,
+          myPlacemark;
+        function init(){
+          myMap = new ymaps.Map ("map", {
+            center: [55.76, 37.64],
+            zoom: 14
+          });
+          myPlacemark = new ymaps.Placemark([55.76, 37.64], {
+            content: 'Санкт-Петербург, площадь Восстания, д.3.',
+            balloonContent: 'Время работы — с 9:00 до 19:00'
+          });
+          myMap.geoObjects.add(myPlacemark);
+        }
+
+      });
     </script>
 
   </body>
