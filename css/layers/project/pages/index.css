@@ -48,36 +48,22 @@
     .map_point__normal {width: 14px; height: 14px;}
     .map_point__medium {width: 24px; height: 24px;}
     .map_point__large  {width: 42px; height: 42px;}
-      .map_point > span {
-        bottom: -18px;
-        font-size: 1.2rem;
-        left: 50%;
-        -webkit-transform: translate(-50%, 0);
-        -moz-transform:    translate(-50%, 0);
-        -ms-transform:     translate(-50%, 0);
-        -o-transform:      translate(-50%, 0);
-        transform:         translate(-50%, 0);
-        position: absolute;
-        white-space: nowrap;
-        z-index: 1001;
-      }
       .map_tooltip {
         background: #0982d3;
         border-radius: 5px;
         color: #fff;
         display: none;
-        height: 60px;
         left: 50%;
-        padding: 5px 15px 0;
+        padding: 10px 15px;
         position: absolute;
         text-align: center;
-        top: -75px;
+        top: -105px;
         -webkit-transform: translate(-50%, 0);
         -moz-transform:    translate(-50%, 0);
         -ms-transform:     translate(-50%, 0);
         -o-transform:      translate(-50%, 0);
         transform:         translate(-50%, 0);
-        width: 75px;
+        width: 150px;
         z-index: 1001;
       }
       .map_tooltip:after {
