@@ -76,7 +76,6 @@
           font-weight: 700;
           margin-bottom: .7rem;
           position: relative;
-          z-index: 9999;
         }
           .catalog-filter_t span {
             position: relative;
