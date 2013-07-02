@@ -17,6 +17,6 @@
 | Корзина                       | http://samsung.oskolsky.com/basket-empty.html  |
 | Корзина с заполненными полями | http://samsung.oskolsky.com/basket-full.html   |
 | Спасибо                       | http://samsung.oskolsky.com/thanks.html        |
-|                               | http://samsung.oskolsky.com/thanks-nomap.html  |
-|                               | http://samsung.oskolsky.com/thanks-credit.html |
+| Спасибо без карты             | http://samsung.oskolsky.com/thanks-nomap.html  |
+| Спасибо кредит                | http://samsung.oskolsky.com/thanks-credit.html |
 | 404                           | http://samsung.oskolsky.com/404.html           |
