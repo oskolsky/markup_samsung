@@ -236,56 +236,35 @@
       .basket-i_where        .basket-i-b {padding-bottom: 2rem;}
       .basket-i_payment      .basket-i-b {padding-bottom: 4rem;}
       .basket-i_confirmation .basket-i-b {}
+
         /* Shipping Method */
-        .basket-i-b_shipping-method {
-          border: 2px solid transparent;
-          border-radius: .5rem;
-          color: #333;
-          display: inline-block;
-          height: 3rem;
-          line-height: 3rem;
-          padding: 0 1rem;
-          text-decoration: none;
+        .shipping-method {
+
         }
-        .basket-i-b_shipping-method:hover {
-          color: #333;
+        .shipping-method_map {
+
         }
-          .basket-i-b_shipping-method > span {
-            border-bottom: 1px dashed #333;
-          }
-        .basket-i-b_shipping-method__current {
-          border: 2px solid #0982d3;
-          position: relative;
-          z-index: 1000;
+        .shipping-method_address {
+
         }
-          .basket-i-b_shipping-method__current > span {
-            border-color: transparent;
+
+        .shipping-method_label {
+          padding: .5rem 0;
+        }
+          .shipping-method_label .form_radio__fake {
+            display: inline-block;
+            margin-right: 1rem;
+            vertical-align: top;
           }
-          .basket-i-b_shipping-method__current:before, .basket-i-b_shipping-method__current:after {
-            content: '';
-            left: 50%;
-            position: absolute;
-            z-index: 1001;
+          .shipping-method_shop {
+            display: inline-block;
+            width: 276px;
+            vertical-align: top;
           }
-          .basket-i-b_shipping-method__current:before {
-            background: #0982d3;
-            bottom: -6px;
-            height: 8px;
-            margin-left: -4px;
-            -webkit-transform: rotate(45deg);
-            -moz-transform:    rotate(45deg);
-            -ms-transform:     rotate(45deg);
-            -o-transform:      rotate(45deg);
-            transform:         rotate(45deg);
-            width: 8px;
-          }
-          .basket-i-b_shipping-method__current:after {
-            background: #fff;
-            bottom: 0;
-            height: 4px;
-            margin-left: -4px;
-            width: 8px;;
-          }
+            .shipping-method_shop h6 {
+              color: #0982d3;
+            }
+
         /* Text input label */
         .basket-i-b_label {
           display: inline-block;

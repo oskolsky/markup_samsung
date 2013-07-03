@@ -48,8 +48,8 @@ $(function() {
   });
 
   // Shipping method
-  $('.basket-i-b_shipping-method').click(function() {
-    var method = $(this).data('method');
+  $('.shipping-method').find('.form_select__real').change(function() {
+    var method = $(this).val();
     if (method == 'map') {
       $('.shipping-method_map').show();
       $('.shipping-method_address').hide();

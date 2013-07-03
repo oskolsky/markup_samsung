@@ -51,37 +51,87 @@
             <section class="basket-i basket-i_where basket-i__open">
               <header class="basket-i-h"><span class="basket-i-h_n">2</span>Куда доставить</header>
               <section class="basket-i-b">
-                <div class="cols m-b_1">
-                  <div class="cols-2 mod">
-                    <label class="form_label basket-i-b_label">Город</label>
-                    <div class="form_select__fake form_el__fake form_el__block">
-                      <p>&nbsp;</p>
-                      <select class="form_select__real form_el__real">
-                        <option selected>Выберите</option>
-                        <option>Санкт-Петербург</option>
-                        <option>Москва</option>
-                        <option>Воронеж</option>
-                      </select>
-                    </div>
-                  </div><div class="cols-5 mod">
-                    <p style="margin-left: 1rem;"><i>Способ доставки</i></p>
-                    <div>
-                      <a href="#" class='basket-i-b_shipping-method' data-method="address"><span>Курьером, бесплатно</span></a>
-                      <a href="#" class='basket-i-b_shipping-method basket-i-b_shipping-method__current' data-method="map"><span>Самовывоз со склада, бесплатно</span></a>
+
+                <div class="shipping-method">
+
+                  <div class="cols m-b_1">
+                    <div class="cols-2 mod">
+                      <label class="form_label basket-i-b_label">Город</label>
+                      <div class="form_select__fake form_el__fake form_el__block">
+                        <p>&nbsp;</p>
+                        <select class="form_select__real form_el__real">
+                          <option selected>Выберите</option>
+                          <option>Санкт-Петербург</option>
+                          <option>Москва</option>
+                          <option>Воронеж</option>
+                        </select>
+                      </div>
+                    </div><div class="cols-2 mod">
+                      <label class="form_label basket-i-b_label">Способ доставки</label>
+                      <div class="form_select__fake form_el__fake form_el__block">
+                        <p>&nbsp;</p>
+                        <select class="form_select__real form_el__real">
+                          <option value="map" selected>Самовывоз из магазина</option>
+                          <option value="address">Курьером, бесплатно</option>
+                        </select>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="shipping-method_map">
-                  <div class="m-b_1">
-                    <p><i>Адрес склада</i></p>
-                    <p>Санкт-Петербург, площадь Восстания, д.3. Время работы — с 9<sup>00</sup> до 19<sup>00</sup></p>
+
+                  <div class="shipping-method_map">
+                    <p><i>Выберите магазин</i></p>
+                    <div class="cols">
+                      <div class="cols-3 mod">
+
+                        <label class="form_label form_el__block shipping-method_label">
+                          <span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="shop" checked></span>
+                          <div class="shipping-method_shop">
+                            <h6>ТРК «Континент» на Звездной</h6>
+                            <p>Москва, Дмитровское шоссе, 163А, 1 этаж</p>
+                            <p>8 (812) 677-03-43</p>
+                          </div>
+                        </label>
+
+                        <label class="form_label form_el__block shipping-method_label">
+                          <span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="shop"></span>
+                          <div class="shipping-method_shop">
+                            <h6>ТРК «Континент» на Звездной</h6>
+                            <p>Москва, Дмитровское шоссе, 163А, 1 этаж</p>
+                            <p>8 (812) 677-03-43</p>
+                          </div>
+                        </label>
+
+                        <label class="form_label form_el__block shipping-method_label">
+                          <span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="shop"></span>
+                          <div class="shipping-method_shop">
+                            <h6>ТРК «Континент» на Звездной</h6>
+                            <p>Москва, Дмитровское шоссе, 163А, 1 этаж</p>
+                            <p>8 (812) 677-03-43</p>
+                          </div>
+                        </label>
+
+                        <label class="form_label form_el__block shipping-method_label">
+                          <span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="shop"></span>
+                          <div class="shipping-method_shop">
+                            <h6>ТРК «Континент» на Звездной</h6>
+                            <p>Москва, Дмитровское шоссе, 163А, 1 этаж</p>
+                            <p>8 (812) 677-03-43</p>
+                          </div>
+                        </label>
+
+                      </div><div class="cols-5 mod">
+                        <div id="map" style="width: 100%; height: 365px"></div>
+                      </div>
+                    </div>
                   </div>
-                  <div id="map" style="width: 100%; height: 180px"></div>
+
+                  <div class="shipping-method_address" style="display: none;">
+                    <label class="form_label form_el__block"><i>Адрес</i></label>
+                    <textarea class="form_textarea cols-6" rows="4"></textarea>
+                  </div>
+
                 </div>
-                <div class="shipping-method_address" style="display: none;">
-                  <label class="form_label form_el__block"><i>Адрес</i></label>
-                  <textarea class="form_textarea cols-6" rows="4"></textarea>
-                </div>
+
               </section>
             </section>
 
