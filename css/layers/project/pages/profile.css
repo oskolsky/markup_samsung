@@ -1,0 +1,37 @@
+/* PROFILE PAGE
+---------------------------------------------------------------------------------------------------- */
+.page__profile {
+
+}
+
+.profile {
+
+}
+
+/* Upload photo */
+.profile_upload {
+  background: #f3f3f3;
+  border: 3px solid #fff;
+  box-shadow: 0 0 1rem .5rem #f1f1f1, inset 0 0 .3rem .1rem #e4e4e4;
+  height: 255px;
+  margin-top: 2.3rem;
+  margin-bottom: 2rem;
+  width: 235px;
+}
+.profile_upload_photo {
+  vertical-align: top;
+}
+
+/* Menu */
+.profile_menu {
+
+}
+.profile_menu_i {
+  margin-bottom: 1rem;
+}
+
+/* Add link */
+.profile_add {
+  font-size: 1.2rem;
+  margin-top: .5rem;
+}

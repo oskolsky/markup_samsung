@@ -20,3 +20,4 @@
 | Спасибо без карты             | http://samsung.oskolsky.com/thanks-nomap.html  |
 | Спасибо кредит                | http://samsung.oskolsky.com/thanks-credit.html |
 | 404                           | http://samsung.oskolsky.com/404.html           |
+| Личный кабинет                | http://samsung.oskolsky.com/profile.html           |

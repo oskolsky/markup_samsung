@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<!--[if IE 9]><html lang="ru-RU" class="no-js ie9"><![endif]-->
+<html lang="ru-RU" class="no-js">
+  <head>
+    <title>Личный кабинет / SAMSUNG Фирменные магазины</title>
+    <!--#include virtual="/views/layouts/_head.html" -->
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+  </head>
+  <body class="page__profile">
+
+    <!--#include virtual="/views/layouts/_alerts.html" -->
+    <!--#include virtual="/views/layouts/_header.html" -->
+
+    <section id="section" class="section" role="main">
+      <div class="ctn">
+        <header>
+          <h1 class="page-title">Личный кабинет</h1>
+        </header>
+        <section>
+          <form class="form profile">
+
+            <div class="cols">
+              <div class="cols-3 mod">
+
+                <div class="profile_upload"><img src="/img/blank.gif" alt="" width="235" height="255" class="profile_upload_photo"></div>
+                <menu class="profile_menu">
+                  <li class="profile_menu_i"><a href="#" class="a__pseudo">Изменить фотографию</a></li>
+                  <li class="profile_menu_i"><a href="#" class="a__pseudo">Изменить пароль</a></li>
+                </menu>
+
+              </div><div class="cols-5 mod">
+                
+                <div class="cols">
+                  <div class="cols-3 mod">
+                    <div class="form_row">
+                      <label class="form_label"><i>Ваше имя</i></label>
+                      <input type="text" class="form_text form_el__block">
+                    </div>
+                  </div><div class="cols-2 mod">
+                    <div class="form_row">
+                      <label class="form_label"><i>Дата рождения</i></label>
+                      <input type="text" class="form_text form_el__block">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form_row">
+                  <label class="form_label"><i>Адрес доставки</i></label>
+                  <textarea rows="5" class="form_textarea form_el__block"></textarea>
+                </div>
+
+                <div class="cols">
+                  <div class="cols-3 mod">
+                    <div class="form_row">
+                      <label class="form_label"><i>E-mail</i></label>
+                      <input type="text" class="form_text form_el__block">
+                      <div class="profile_append"></div>
+                      <p class="tx__small" style="margin-top: .5rem;">Сюда мы отправим детали заказа</p>
+                      <!--<p><a href="#" class="a__pseudo profile_add" data-template="email">Добавить еще один адрес</a></p>-->
+                    </div>
+                  </div><div class="cols-2 mod">
+                    <label class="form_label" style="margin-top: 2.7rem;"><span class="form_checkbox__fake form_el__fake" data-checked="false"><input type="checkbox" class="form_checkbox__real form_el__real"></span> Ежемесячная рассылка</label>
+                  </div>
+                </div>
+
+                <div class="cols">
+                  <div class="cols-3 mod">
+                    <div class="form_row">
+                      <label class="form_label"><i>Телефон</i></label>
+                      <input type="text" class="form_text form_el__block">
+                      <p class="tx__small" style="margin-top: .5rem;">По нему вам позвонит курьер, а мы сможем отправлять дополнительную информацию по СМС</p>
+                      <!--<p><a href="#" class="a__pseudo profile_add" data-template="phone">Добавить еще один номер</a></p>-->
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form_row">
+                  <input type="submit" class="form_button" value="Сохранить">
+                </div>
+
+              </div>
+            </div>
+
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <!--#include virtual="/views/layouts/_footer.html" -->
+    <!--#include virtual="/views/dialogs/_geo.html" -->
+
+  </body>
+</html>

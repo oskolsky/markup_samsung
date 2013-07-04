@@ -250,7 +250,11 @@
   }
   
   /* <LABEL></LABEL> */
-  .form_label {font-size: 1.4rem;}
+  .form_label {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+  }
 
   /* <SELECT> */
   .form_select__fake {

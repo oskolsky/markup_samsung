@@ -265,17 +265,6 @@
               color: #0982d3;
             }
 
-        /* Text input label */
-        .basket-i-b_label {
-          display: inline-block;
-          font-style: italic;
-          margin-bottom: .5rem;
-        }
-        /* Radio label */
-        .basket-i-b .form_label {
-          cursor: pointer;
-          margin-bottom: .6rem;
-        }
         /* Buyer list */
         .basket-i-b_buyer-list > li {
           margin-bottom: .5rem;
