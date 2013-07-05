@@ -73,6 +73,27 @@ $(function() {
     $(this).parent('span').find('.catalog-filter_tooltip').remove();
   });
 
+  // DIALOGS
+  // ----------------------------------------------------------------------------------------------------
+  /* Open dialog */
+  $(document).on('click', '[data-dialog]', function() {
+    $.arcticmodal('close');
+    var $this = $(this),
+        id = $this.data('dialog');
+    $.arcticmodal({
+      type: 'ajax',
+      url: '/views/dialogs/_' + id + '.html',
+      afterLoadingOnShow: function() {
+      }
+    });
+    return false;
+  });
+
+  /* Close dialog */
+  $(document).on('click', '.dialog_close', function() {
+    $.arcticmodal('close');
+    return false;
+  });
 
 });
 

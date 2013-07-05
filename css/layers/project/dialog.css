@@ -3,17 +3,8 @@
 .dialog {
   background: #fff;
   border-radius: .5rem;
-  box-shadow: 0 0 5rem .5rem #bababa;
-  display: none;
   padding: 3rem 0;
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-    -moz-transform:  translate(-50%, -50%);
-     -ms-transform:  translate(-50%, -50%);
-      -o-transform:  translate(-50%, -50%);
-         transform:  translate(-50%, -50%);
+  position: relative;
   width: 640px;
   z-index: 9999;
 }
@@ -42,7 +33,7 @@
       top: 3px;
     }
 
-/* LOCATION FOR DIALOG
+/* LOCATION DIALOG
 ---------------------------------------------------------------------------------------------------- */
 .location {
 
@@ -65,7 +56,7 @@
       color: #0982d3;
     }
 
-/* CALL FOR DIALOG
+/* CALL DIALOG
 ---------------------------------------------------------------------------------------------------- */
 .call {
 
@@ -80,3 +71,22 @@
     font-size: 1.6rem;
     margin-left: 4rem;
   }
+
+/* REGISTER DIALOG
+---------------------------------------------------------------------------------------------------- */
+.dialog__register,
+.dialog__login,
+.dialog__recover-password,
+.dialog__change-password {
+  padding: 4rem;
+  width: 265px;
+}
+.dialog__recover-password {
+  width: 305px;
+}
+.dialog__register .dialog_title,
+.dialog__login .dialog_title,
+.dialog__recover-password .dialog_title,
+.dialog__change-password .dialog_title {
+  margin-left: 0;
+}
