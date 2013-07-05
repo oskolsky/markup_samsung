@@ -1,0 +1,17 @@
+/* MY ORDERS PAGE
+---------------------------------------------------------------------------------------------------- */
+.page__my-orders {
+
+}
+
+/* Table my orders */
+.my-orders {
+  margin-top: 2rem;
+}
+.my-orders_i {
+  border-top: 1px solid #ececec;
+  padding: 1rem 0;
+}
+.my-orders_i:not(:last-child) {
+  margin-bottom: 2rem;
+}

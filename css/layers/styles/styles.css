@@ -138,8 +138,9 @@ textarea {resize: none;}
 .tx__normal {font-size: 1.4rem !important;}
 .tx__large  {font-size: 1.8rem;}
 
-.tx__muted {color: #666;}
-.tx__color {color: #0982d3;}
+.tx__muted   {color: #666;}
+.tx__color   {color: #0982d3;}
+.tx__success {color: #009500;}
 
 /* LINKS
 ---------------------------------------------------------------------------------------------------- */

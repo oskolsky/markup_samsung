@@ -21,4 +21,5 @@
 | Спасибо кредит                | http://samsung.oskolsky.com/thanks-credit.html |
 | 404                           | http://samsung.oskolsky.com/404.html           |
 | Личный кабинет                | http://samsung.oskolsky.com/profile.html       |
+| Мои заказы                    | http://samsung.oskolsky.com/my_orders.html     |
 | Окна                          | http://samsung.oskolsky.com/dialogs.html       |
