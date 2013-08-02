@@ -159,9 +159,15 @@
         }
         .basket-units-i_caption {
           float: left;
-          padding: 0 25px;
-          width: 177px;
+          padding: 0 15px;
+          width: 197px;
         }
+          .basket-units-i_discount {
+            margin-bottom: 1rem;
+          }
+          .basket-units-i_discount > span {
+            color: #0982d3;
+          }
           .basket-units-i_a {
             color: #333;
             line-height: 20px;
@@ -232,9 +238,9 @@
       .basket-i-b {
 
       }
-      .basket-i_to           .basket-i-b {padding-bottom: 4rem;}
-      .basket-i_where        .basket-i-b {padding-bottom: 2rem;}
-      .basket-i_payment      .basket-i-b {padding-bottom: 4rem;}
+      .basket-i_to           {padding-bottom: 4rem;}
+      .basket-i_where        .basket-i-b {padding-bottom: 4rem;}
+      .basket-i_payment      {padding-bottom: 4rem;}
       .basket-i_confirmation .basket-i-b {}
 
         /* Shipping Method */
@@ -276,6 +282,17 @@
           line-height: 2rem;
           margin-bottom: 1.5rem;
         }
+
+    .basket-i_next {
+      margin-top: 20px;
+    }
+      .basket-i_next_btn {
+        margin-bottom: 15px;
+      }
+      .basket-i_next_cnt {
+
+      }
+
     /* Credit profile */
     .credit-profile {
       display: none;
