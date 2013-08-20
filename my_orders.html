@@ -38,5 +38,29 @@
 
     <!--#include virtual="/views/layouts/_footer.html" -->
 
+    <script type="text/javascript">
+      $(function() {
+
+        $('.js-show_details').click(function() {
+          var $cnt = $(this).closest('.my-orders_i');
+          $(this).hide();
+          $('.my-orders').find('.__bordered').removeClass('__bordered');
+          $('.my-orders').find('.my-orders_details').hide();
+          $cnt.addClass('__bordered');
+          $cnt.find('.my-orders_details').show();;
+          return false;
+        });
+
+        $('.js-hide_details').click(function() {
+          var $cnt = $(this).closest('.my-orders_i');
+          $cnt.find('.js-show_details').show();
+          $('.my-orders').find('.__bordered').removeClass('__bordered');
+          $('.my-orders').find('.my-orders_details').hide();
+          return false;
+        });
+
+      });
+    </script>
+
   </body>
 </html>

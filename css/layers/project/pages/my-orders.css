@@ -12,6 +12,30 @@
   border-top: 1px solid #ececec;
   padding: 1rem 0;
 }
+.my-orders_i.__bordered {
+  border-top: 1px solid transparent;
+}
 .my-orders_i:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+
+.my-orders_details {
+  display: none;
+  margin-top: 2rem;
+}
+.my-orders_details_goods {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 2rem 0;
+}
+.my-orders_details_goods .show-price_sum {
+  font-size: 1.8rem;
+}
+
+.my-orders_details_summary {
+
+}
+.my-orders_details_summary .show-price_sum {
+  font-size: 1.8rem;
 }
