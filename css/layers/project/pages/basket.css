@@ -259,12 +259,16 @@
         }
           .shipping-method_label .form_radio__fake {
             display: inline-block;
-            margin-right: 1rem;
+            /*margin-right: 1rem;*/
             vertical-align: top;
+          }
+          .shipping-method_shops {
+            height: 365px;
+            overflow-y: scroll;
           }
           .shipping-method_shop {
             display: inline-block;
-            width: 276px;
+            width: 260px;
             vertical-align: top;
           }
             .shipping-method_shop h6 {
