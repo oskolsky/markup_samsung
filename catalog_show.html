@@ -234,6 +234,12 @@
 
     <script type="text/javascript">
 
+      $('.form_button__inbag').click(function() {
+        $(this).text('Оформить');
+        $(this).addClass('__order');
+        return false;
+      });
+
       // Star ratings
       // http://wbotelhos.com/raty/
       $('.rating_stars').raty({
