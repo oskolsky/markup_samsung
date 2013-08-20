@@ -264,7 +264,8 @@
           }
           .shipping-method_shops {
             height: 365px;
-            overflow-y: scroll;
+            overflow-y: auto;
+            width: auto;
           }
           .shipping-method_shop {
             display: inline-block;
@@ -328,3 +329,14 @@
     .credit-profile_tx p {
       margin-bottom: 2rem;
     }
+
+/* Banner */
+.basket-banner {
+
+}
+.basket-banner.__text {
+  background: #fcfcfc;
+  border: 1px solid #eee;
+  border-radius: .8rem;
+  padding: 1rem;
+}

@@ -4,6 +4,8 @@ $(function() {
 
   $.stickyFooter(40);
 
+  $('.scroll-pane').jScrollPane();
+
   $('#tabs').tabs();
 
   $('.js-tabs-open').click(function(event) {
