@@ -3,3 +3,12 @@
 .page__article {
 
 }
+
+.list-style {
+  list-style: disc;
+  margin-left: 2rem;
+}
+.list-style ul {
+  list-style: circle;
+  margin-left: 4rem;
+}
