@@ -7,10 +7,13 @@
   .gallery_viewport {
     margin-bottom: 2rem;
   }
-    .gallery_img {
-      height: 420px;
-      width: 420px;
+    .gallery_viewport_i {
+      display: none;
     }
+      .gallery_img {
+        height: 420px;
+        width: 420px;
+      }
     .gallery-nav {
       font-size: 0;
       text-align: center;
@@ -23,6 +26,19 @@
         line-height: 45px;
         margin: 0 10px 20px 10px;
         width: 45px;
+        vertical-align: middle;
+      }
+      .gallery-nav_i.__play {
+        position: relative;
+      }
+      .gallery-nav_i.__play::after {
+        background: url(/img/play.png) center no-repeat;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
       }
       .gallery-nav_i img {
         vertical-align: middle;

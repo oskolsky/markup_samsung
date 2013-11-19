@@ -1,6 +1,6 @@
 <?php
 
-  $mail = 'info@oskolsky.com';
+  $mail = 'settimomarzo@gmail.com';
 
   include_once ('mail.class.php');
   $mail_credit = new mail('utf-8');

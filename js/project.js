@@ -45,8 +45,9 @@ $(function() {
 
   // Gallery
   $('.gallery').find('.gallery-nav_i').click(function() {
-    var src = $(this).attr('rel');
-    $(this).closest('.gallery').find('.gallery_img').attr('src', src);
+    var rel = $(this).attr('rel');
+    $('.gallery').find('.gallery_viewport').find('.gallery_viewport_i').hide();
+    $('.gallery').find('.gallery_viewport').find('.gallery_viewport_i.__' + rel).fadeIn();
     $('.gallery').find('.gallery-nav_i').removeClass('gallery-nav_i__current');
     $(this).addClass('gallery-nav_i__current');
     return false;
