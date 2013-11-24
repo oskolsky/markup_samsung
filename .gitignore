@@ -4,3 +4,5 @@
 # Project file
 config.txt
 *.log
+cgi-bin
+logs
