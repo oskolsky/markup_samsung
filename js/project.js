@@ -3,6 +3,8 @@
 $(function() {
 
   $.stickyFooter(40);
+  
+   $('.page__newyear').find('.section').parallax("50%", 0.2);
 
   $('.scroll-pane').jScrollPane();
 

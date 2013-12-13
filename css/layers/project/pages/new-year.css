@@ -6,3 +6,22 @@
 .page__newyear .page-title {
   color: #009ee3;
 }
+
+.page__newyear .show-price_sum {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+.page__newyear .form_button {
+  margin-right: 10px;
+}
+
+.page__newyear ul li {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.page__newyear .section {
+  background: url(/img/newyear.png) center top no-repeat;
+}
