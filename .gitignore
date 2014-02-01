@@ -1,8 +1,29 @@
+# Log file
+*.log
+
+# Eclipse
+.project
+
+# Mac
+.DS_Store
+
 # RubyMine
 .idea
 
-# Project file
-config.txt
+# Sword
+sword.exe
+
+# Sublime Text
+*.sublime-*
+
+# System
 *.log
-cgi-bin
-logs
+
+# Windows
+Thumbs.db
+
+#exe
+*.exe
+
+#Sass
+.sass-cache
