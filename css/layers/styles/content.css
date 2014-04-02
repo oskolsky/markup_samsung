@@ -130,15 +130,19 @@
 }
 
 .cnt > table > thead > tr > th {
-  padding: 1rem 2rem;
-  background: #ddd;
-  border-bottom: 1px solid #ccc;
+  padding: 0 4rem;
+  background: #a9dced;
   text-align: left;
 }
 
 .cnt > table > tbody > tr > td {
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #ccc;
+  padding: 0 4rem;
+}
+.cnt > table > tbody > tr:nth-child(2n+1) {
+  background-color: #d2eef6;
+}
+.cnt > table > tbody > tr:nth-child(2n) {
+  background-color: #a9dced;
 }
 
 .cnt > table > tfoot > tr > td {
