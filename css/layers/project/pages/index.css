@@ -159,3 +159,35 @@
     margin: 0 2px;
     vertical-align: top;
   }
+
+.banners_i.__rotate {
+    width: 250px;
+    height: 340px;
+    position: relative;
+}
+  .banners_i_side {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .banners_i_side.__1 {
+    z-index: 2;
+  }
+  .banners_i_side.__2 {
+    z-index: 1;
+  } 
+
+.banners_i.__rotate.__rotate1 {
+  -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+     -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+       -o-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+          transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);  
+}
+.banners_i.__rotate.__rotate2 {
+  -webkit-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+     -moz-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+      -ms-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+       -o-transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);
+          transform: rotateX(0deg) rotateY(180deg) rotateZ(0deg);  
+}

@@ -3,8 +3,14 @@
 $(function() {
 
   $.stickyFooter(40);
-  
-   $('.page__newyear').find('.section').parallax("50%", 0.2);
+
+  /* Rotate banners */
+  setTimeout(function(){
+    $('.banners_i.__rotate').toggleClass('__rotate1 __rotate2')
+  }, 3000);
+
+   
+  $('.page__newyear').find('.section').parallax("50%", 0.2);
 
   $('.scroll-pane').jScrollPane();
 
