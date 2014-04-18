@@ -5,8 +5,8 @@ $(function() {
   $.stickyFooter(40);
 
   /* Rotate banners */
-  setTimeout(function(){
-    $('.banners_i.__rotate').toggleClass('__rotate1 __rotate2')
+  setInterval(function(){
+    $('.banners_i.__double').toggleClass('__flip');
   }, 3000);
 
    
