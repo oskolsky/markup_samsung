@@ -148,3 +148,14 @@
     .chain-stores_i {
       margin-bottom: 2rem;
     }
+
+
+/* Banners */
+.banners {
+  text-align: center;
+}
+  .banners_i {
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: top;
+  }
