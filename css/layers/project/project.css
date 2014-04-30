@@ -1,3 +1,28 @@
 .banner {
   border: 1px solid #ccc;
 }
+
+/* Autocomplete */
+.ui-helper-hidden-accessible {
+  display: none;
+}
+.ui-autocomplete {    
+  width: 310px;
+  border: 1px solid #bebebe;
+  border-radius: 3px;
+  background-color: #fff;
+  z-index: 9999;
+}
+  .ui-menu-item {
+
+  }
+    .ui-menu-item a {
+      padding: 5px 16px;
+      display: block;
+      text-decoration: none;
+      font-size: 14px;
+      cursor: pointer;
+    }
+      .ui-menu-item a.ui-state-focus {
+        background-color: #eee;
+      }
