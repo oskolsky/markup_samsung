@@ -28,6 +28,15 @@
       }
       
 /* Solutions */
+.solutions-logos {
+  margin-bottom: 20px;
+}
+  .solutions-logos_i {
+    display: inline-block;
+    vertical-align: middle;    
+  }
+  .solutions-logos_i:not(:last-child) {margin-right: 100px;}
+
 .solutions-items {
   margin: 40px 0;
 }
