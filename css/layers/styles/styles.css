@@ -129,7 +129,7 @@ textarea {resize: none;}
 /* Vertical-align */
 .va-bl {vertical-align: baseline;}
 .va-t  {vertical-align: top;}
-.va-m  {vertical-align: middle;}
+.va-m  {vertical-align: middle !important;}
 .va-b  {vertical-align: bottom;}
 
 /* TEXT

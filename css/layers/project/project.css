@@ -26,3 +26,59 @@
       .ui-menu-item a.ui-state-focus {
         background-color: #eee;
       }
+      
+/* Solutions */
+.solutions-items {
+  margin: 40px 0;
+}
+  .solutions-item {
+    padding-top: 10px;
+    display: inline-block;
+    width: 270px;
+    vertical-align: top;
+    border-top: 2px solid #00a3db;
+  }
+  .solutions-item:not(:last-child) {margin-right: 25px;}
+    .solutions-item_name {
+      margin-bottom: 30px;    
+    }
+      .solutions-item_name a {
+        color: #000;
+        text-decoration: none;
+      }
+      .solutions-item_price {
+          margin-top: 50px;
+          font-family: 'PFSquareSansProMedium', 'PT Sans', Helvetica, Arial, sans-serif;
+          font-size: 18px;
+          font-weight: 700;
+          display: inline-block;
+          vertical-align: top;
+          color: #233346;
+      }
+      .solutions-item_price span {font-size: 26px;}
+    .solutions-item_description {
+      padding: 10px;
+      color: #fff;
+      background-color: #00a3db; 
+    }
+
+.solutions {
+  margin: 40px 0;
+}
+  .solutions_list {
+    
+  }
+    .solutions_list li {position: relative;}
+    .solutions_list li:not(:last-child) {margin-bottom: 10px;}
+    .solutions_list li .ico-38 {
+      position: absolute;
+      top: 0;
+      left: -55px;
+      top: 50%;
+      margin-top: -19px;
+    }
+    .solutions_list li b {color: #f5b00f;}
+  .solutions_blockquote {
+    border: 2px solid #f5b00f;
+    padding: 10px 20px;
+  }
