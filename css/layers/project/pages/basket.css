@@ -299,6 +299,47 @@
 
       }
 
+    /* Basket payment info */
+    .basket-i_payment {
+
+    }
+      .basket-i_payment .form_label {
+        position: relative;
+        width: 430px;
+      }
+        .basket-i_payment .form_label .form_radio__fake[data-checked="true"] + .basket-i_payment_name + .basket-i_payment_info {display: block !important;}
+
+    .basket-i_payment_name {
+      position: relative;
+      z-index: 1000;
+      padding-right: 2rem;
+      padding-left: .5rem;
+      background-color: #fff;
+    }
+    .basket-i_payment_info {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      display: none;
+      padding-left: 1rem;
+      width: 416px;
+      border-left: 4px solid #0982d3;
+      background-color: #fff;
+      -webkit-transform: translateY(-45%);
+         -moz-transform: translateY(-45%);
+          -ms-transform: translateY(-45%);
+              transform: translateY(-45%);
+    }
+      .basket-i_payment_info::before {
+        position: absolute;
+        top: 50%;
+        right: 430px;
+        left: -430px;
+        height: 1px;
+        background-color: #b3b3b3;
+        content: '';
+      }
+
     /* Credit profile */
     .credit-profile {
       display: none;
