@@ -163,47 +163,52 @@
 
 /* MENU
 ---------------------------------------------------------------------------------------------------- */
-.menu {
+.menu-wrap {  
   margin-bottom: 1rem;
   text-align: justify;
   text-align-last: justify;
 }
-  .menu:after {
-    content: "";
+  .menu-wrap:after {
     display: inline-block;
-    height: 0;
     overflow: hidden;
     width: 100%;
+    height: 0;
+    content: "";
   }
-  .menu_i {
+
+  .menu {
     display: inline-block;
   }
-    .menu_a {
-      border-top: 2px solid transparent;
-      border-bottom: 1px solid #9fa0a0;
-      color: #333;
-      font-family: 'PFSquareSansProMedium', "PT Sans", Helvetica, Arial, sans-serif;
-      font-size: 1.8rem;
-      line-height: 1.8rem;
-      padding: .5rem;
-      text-transform: uppercase;
-      text-decoration: none;
+    .menu_i:not(:last-child) {
+      margin-bottom: 1rem;
     }
-      .menu_a:hover {
-        border-color: transparent;
+      .menu_a {
+        padding: .5rem;
+        border-top: 2px solid transparent;
+        border-bottom: 1px solid #9fa0a0;
         color: #333;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        font-size: 1.8rem;
+        font-family: 'PFSquareSansProMedium', "PT Sans", Helvetica, Arial, sans-serif;
+        line-height: 1.8rem;
       }
-    .menu_a__stock   {border-bottom: 1px solid #cf341a;}
-    .menu_a__bonuses {border-bottom: 1px solid #004494;}
-    .menu_a__stock, .menu_a__stock:hover     {color: #cf341a;}
-    .menu_a__bonuses, .menu_a__bonuses:hover {color: #004494;}
+        .menu_a:hover {
+          border-color: transparent;
+          color: #333;
+        }
+      .menu_a__stock   {border-bottom: 1px solid #cf341a;}
+      .menu_a__bonuses {border-bottom: 1px solid #004494;}
+      .menu_a__stock, .menu_a__stock:hover     {color: #cf341a;}
+      .menu_a__bonuses, .menu_a__bonuses:hover {color: #004494;}
 
-    .menu_a__current {
-      background: #f8f8f8;
-      border-top: 2px solid #0982d3;
-      border-bottom: 1px solid transparent;
-      border-radius: .3rem;
-    }
+      .menu_a__current {
+        background: #f8f8f8;
+        border-top: 2px solid #0982d3;
+        border-bottom: 1px solid transparent;
+        border-radius: .3rem;
+      }
 
 /* SECTION
 ---------------------------------------------------------------------------------------------------- */
