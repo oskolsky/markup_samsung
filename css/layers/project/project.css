@@ -91,3 +91,18 @@
     border: 2px solid #f5b00f;
     padding: 10px 20px;
   }
+
+/* Catalog menu
+---------------------------------------------------------------------------------------------------- */
+.catalog-menu {
+  margin-bottom: 2rem;
+}
+  .catalog-menu_i {
+    text-align: center;
+  }
+    .catalog-menu_i_a {
+      display: block;
+    }
+      .catalog-menu_i_a img {
+        background-color: #ccc;
+      }
