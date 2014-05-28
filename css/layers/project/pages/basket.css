@@ -134,6 +134,23 @@
           border-color: #ccc;
         }
 
+        .basket-goods-i_gift {
+          position: relative;          
+          color: #0982d3;
+          font-size: 12px;
+          line-height: 1;
+        }
+          .basket-goods-i_gift img {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .basket-goods-i_gift span {
+            display: inline-block;
+            margin-top: 3px;
+            vertical-align: middle;
+            text-align: left;
+          }
+
     /* Basket units  */
     .basket-units {
       left: -20px;
@@ -151,7 +168,7 @@
         display: inline-block;
         padding: 35px 0 20px 0;
         margin-left: -1px;
-        width: 299px;
+        width: 298px;
       }
         .basket-units-i_img {
           float: left;

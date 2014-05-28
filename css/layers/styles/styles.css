@@ -139,7 +139,7 @@ textarea {resize: none;}
 .tx__large  {font-size: 1.8rem;}
 
 .tx__muted   {color: #666;}
-.tx__color   {color: #0982d3;}
+.tx__color   {color: #0982d3 !important;}
 .tx__success {color: #009500;}
 
 /* LINKS
