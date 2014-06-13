@@ -134,6 +134,23 @@
           border-color: #ccc;
         }
 
+        .basket-goods-i_gift {
+          position: relative;          
+          color: #0982d3;
+          font-size: 12px;
+          line-height: 1;
+        }
+          .basket-goods-i_gift img {
+            display: inline-block;
+            vertical-align: middle;
+          }
+          .basket-goods-i_gift span {
+            display: inline-block;
+            margin-top: 3px;
+            vertical-align: middle;
+            text-align: left;
+          }
+
     /* Basket units  */
     .basket-units {
       left: -20px;
@@ -151,7 +168,7 @@
         display: inline-block;
         padding: 35px 0 20px 0;
         margin-left: -1px;
-        width: 299px;
+        width: 298px;
       }
         .basket-units-i_img {
           float: left;
@@ -297,6 +314,47 @@
       }
       .basket-i_next_cnt {
 
+      }
+
+    /* Basket payment info */
+    .basket-i_payment {
+
+    }
+      .basket-i_payment .form_label {
+        position: relative;
+        width: 430px;
+      }
+        .basket-i_payment .form_label .form_radio__fake[data-checked="true"] + .basket-i_payment_name + .basket-i_payment_info {display: block !important;}
+
+    .basket-i_payment_name {
+      position: relative;
+      z-index: 1000;
+      padding-right: 2rem;
+      padding-left: .5rem;
+      background-color: #fff;
+    }
+    .basket-i_payment_info {
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      display: none;
+      padding-left: 1rem;
+      width: 416px;
+      border-left: 4px solid #0982d3;
+      background-color: #fff;
+      -webkit-transform: translateY(-45%);
+         -moz-transform: translateY(-45%);
+          -ms-transform: translateY(-45%);
+              transform: translateY(-45%);
+    }
+      .basket-i_payment_info::before {
+        position: absolute;
+        top: 50%;
+        right: 430px;
+        left: -430px;
+        height: 1px;
+        background-color: #b3b3b3;
+        content: '';
       }
 
     /* Credit profile */

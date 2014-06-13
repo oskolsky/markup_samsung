@@ -47,12 +47,80 @@
         border: 1px solid #00b7ef;
       }
 
+/* Stat panel */      
+.stat {
+  margin-bottom: 2rem;
+}
+  .stat_i {
+    display: inline-block;
+    margin-bottom: 4rem;
+    vertical-align: top;
+  }
+  .stat_i.__small {
+    margin-right: 20px;
+    width: 145px;
+  }
+  .stat_i.__large {    
+    width: 255px;
+  }
+
+  .stat_gift {
+    position: relative;
+    top: 24px;
+    display: inline-block;
+    padding-left: 25px;
+    color: #0982d3;
+    font-size: 12px;
+    line-height: 1;
+  }
+    .stat_gift img {
+      position: absolute;
+      top: -2px;
+      left: 0;
+    }
+
+  .stat_vip {
+    position: relative;
+    display: inline-block;
+    padding-left: 65px;
+    color: #0982d3;
+  }
+    .stat_vip img {
+      position: absolute;
+      top: -10px;
+      left: 0;
+    }
+
+.buy-panel {
+  margin-bottom: 2rem;
+}
+  .buy-panel_i {
+    display: inline-block;
+    vertical-align: top;
+  }
+  .buy-panel_i:not(:last-child) {
+    margin-right: 2rem;
+  }
+  .buy-panel_i.__gift {
+  }
+
 /* Availability */
 .availability {
 
 }
-  .availability-header {
+  
+  .availability_i:not(:last-child) {
     margin-bottom: 2rem;
+  }
+  .availability_i p:not(:last-child) {margin-bottom: .5rem;}
+
+  .availability_map {
+    width: 100%;
+    height: 35rem;
+  }
+
+  .availability-header {
+    margin-bottom: 4rem;
   }
   .availability-section {
     height: 150px;

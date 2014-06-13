@@ -22,6 +22,29 @@
             <section class="basket-goods">
               <!--#include virtual="/views/basket/_item.html" -->              
               <!--#include virtual="/views/basket/_item.html" -->
+              
+              <!-- data-price - цена за еденицу продукции, нужна для JS -->
+              <div class="basket-goods-i" data-price="25590">
+                <div class="cols">
+                  <div class="cols-1 mod va-m">
+                    <img src="/img/fake/unit_01.jpg" alt="Samsung GT-I9300 GALAXY S III 16 Gb" width="90" class="basket-goods-i_img">
+                  </div><div class="cols-4 mod va-m">
+                    <div class="m-b_1">
+                      <p class="tx__small tx__color">Смартфон</p>
+                      <p><a href="/catalog_show.html" class="basket-goods-i_a tx__color">Samsung GT-I9300 GALAXY S III 16 Gb</a></p>
+                      <p class="tx__color">Краткое описание c выжимкой. Яркий дисплей 4.3”. Аппаратная кнопка. Андроид 4.1. Аккумулятор на 8 часов.</p>
+                    </div>
+                  </div><div class="cols-2 mod ta-r va-m">
+                    <div class="basket-goods-i_gift">
+                      <img src="/img/gift_b.png" width="44" height="49" alt="">
+                      <span>подарок<br>при покупку</span>
+                    </div>  
+                  </div><div class="cols-1 mod p-r">
+                    <a href="#" class="basket-goods-i_remove"><img src="/img/remove.png" alt=""></a>
+                  </div>
+                </div>
+              </div>              
+
             </section>
 
             <section class="basket-units">
@@ -221,12 +244,42 @@
             <section class="basket-i basket-i_payment basket-i__open">
               <header class="basket-i-h"><span class="basket-i-h_n">3</span>Как оплатить</header>
               <section class="basket-i-b">
-                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Наличными курьеру</label>
-                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Безналичный расчет для юр. лиц</label>
-                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Кредитная карта курьеру</label>
-                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2" id="open-credit-form"></span> Оформление товара в кредит</label>
-                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Кредитной картой через интернет</label>
-                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span> Банковский перевод</label>
+                <label class="form_label form_el__block">
+                  <span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span><span class="basket-i_payment_name">Наличными курьеру</span>
+                  <span class="basket-i_payment_info">
+                    <b>Описание типа оплаты&nbsp;&mdash;</b> текст описания типа оплаты, при входе в&nbsp;один из&nbsp;разделов каталога под меню каталога&nbsp;&mdash; отображаем горизантальный бар с&nbsp;вложенными катагориями.
+                  </span>
+                </label>
+                <label class="form_label form_el__block"><span class="form_radio__fake form_el__fake">
+                  <input type="radio" class="form_radio__real form_el__real" name="radio2"></span><span class="basket-i_payment_name">Безналичный расчет для юр. лиц</span>
+                  <span class="basket-i_payment_info">
+                    <b>Описание типа оплаты&nbsp;&mdash;</b> текст описания типа оплаты, при входе в&nbsp;один из&nbsp;разделов каталога под меню каталога&nbsp;&mdash; отображаем горизантальный бар с&nbsp;вложенными катагориями.
+                  </span>
+                </label>
+                <label class="form_label form_el__block">
+                  <span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span><span class="basket-i_payment_name">Кредитная карта курьеру</span>
+                  <span class="basket-i_payment_info">
+                    <b>Описание типа оплаты&nbsp;&mdash;</b> текст описания типа оплаты, при входе в&nbsp;один из&nbsp;разделов каталога под меню каталога&nbsp;&mdash; отображаем горизантальный бар с&nbsp;вложенными катагориями.
+                  </span>
+                </label>
+                <label class="form_label form_el__block">
+                  <span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2" id="open-credit-form"></span><span class="basket-i_payment_name">Оформление товара в кредит</span>
+                  <span class="basket-i_payment_info">
+                    <b>Описание типа оплаты&nbsp;&mdash;</b> текст описания типа оплаты, при входе в&nbsp;один из&nbsp;разделов каталога под меню каталога&nbsp;&mdash; отображаем горизантальный бар с&nbsp;вложенными катагориями.
+                  </span>
+                </label>
+                <label class="form_label form_el__block">
+                  <span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span><span class="basket-i_payment_name">Кредитной картой через интернет</span>
+                  <span class="basket-i_payment_info">
+                    <b>Описание типа оплаты&nbsp;&mdash;</b> текст описания типа оплаты, при входе в&nbsp;один из&nbsp;разделов каталога под меню каталога&nbsp;&mdash; отображаем горизантальный бар с&nbsp;вложенными катагориями.
+                  </span>
+                </label>
+                <label class="form_label form_el__block">
+                  <span class="form_radio__fake form_el__fake"><input type="radio" class="form_radio__real form_el__real" name="radio2"></span><span class="basket-i_payment_name">Банковский перевод</span>
+                  <span class="basket-i_payment_info">
+                    <b>Описание типа оплаты&nbsp;&mdash;</b> текст описания типа оплаты, при входе в&nbsp;один из&nbsp;разделов каталога под меню каталога&nbsp;&mdash; отображаем горизантальный бар с&nbsp;вложенными катагориями.
+                  </span>
+                </label>
               </section>
               <section class="credit-profile">
                 <div class="cols">

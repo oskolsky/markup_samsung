@@ -56,12 +56,13 @@
 
 /* Logo */
 .header-logo {
-
+  margin-top: 10px;
 }
   .header-logo_title {
     color: #004494;
+    text-align: center;
+    font-size: 2rem;
     font-family: 'PFSquareSansProRegular', "PT Sans", Helvetica, Arial, sans-serif;
-    font-size: 1.6rem;
     line-height: 3rem;
   }
   .header-logo_img {
