@@ -124,19 +124,21 @@
 .cnt > table {width: 100%;}
 
 .cnt > table > caption {
-  padding: 1rem 2rem;
+  padding: 12rem 2rem;
   font-style: italic;
   text-align: right;
 }
 
 .cnt > table > thead > tr > th {
-  padding: 0 4rem;
+  padding: .5rem 3rem;
   background: #a9dced;
   text-align: left;
 }
-
 .cnt > table > tbody > tr > td {
-  padding: 0 4rem;
+  padding: .5rem 3rem;
+}
+.cnt > table > tbody > tr > td:not(:last-child), .cnt > table > thead > tr > th:not(:last-child) {
+  border-right: .3rem solid #fff;
 }
 .cnt > table > tbody > tr:nth-child(2n+1) {
   background-color: #d2eef6;
