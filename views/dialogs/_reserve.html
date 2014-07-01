@@ -44,6 +44,9 @@
       <label class="form_label"><i>E-mail</i></label>
       <input type="password" class="form_text form_el__block">
     </div>
+    <div class="form_row">
+      <label class="form_label"><span class="form_checkbox__fake form_el__fake"><input type="checkbox" class="form_checkbox__real form_el__real"></span> SMS оповещение</label>
+    </div>
     <div class="clearfix">
       <div class="f-l"><input type="submit" class="form_button" value="Отложить"></div>
       <div class="f-r" style="margin-top: .7rem;"><a href="#">Хочу в кредит</a></div>
@@ -51,3 +54,9 @@
   </form>
 
 </div>
+
+<script type="text/javascript">
+  $(function() {
+    forms.init();
+  });
+</script>
