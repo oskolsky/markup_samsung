@@ -107,9 +107,10 @@
       .unit_sum {
         font-family: 'PFSquareSansProBold', "PT Sans", Helvetica, Arial, sans-serif;
         color: #0982d3;
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-weight: 700;
         line-height: 2.3rem;
+        letter-spacing: -1px;
       }
     .unit_gift {
       position: absolute;
