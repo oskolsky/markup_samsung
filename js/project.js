@@ -25,7 +25,7 @@ $(function() {
       $('.banners.__flip').find('.banners_i').find('div').stop().rotate3Di('flip', 250, {direction: 'clockwise', sideChange: mySideChange});
       i = false;  
     } else {
-      $('.banners.__flip').find('.banners_i').find('div').stop().rotate3Di('unflip', 500, {sideChange: mySideChange});
+      $('.banners.__flip').find('.banners_i').find('div').stop().rotate3Di('unflip', 250, {sideChange: mySideChange});
       i = true;
     }
   }, 3000);
