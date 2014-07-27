@@ -5,8 +5,29 @@ $(function() {
   $.stickyFooter(40);
 
   /* Rotate banners */
-  setInterval(function(){
-    $('.banners_i.__double').toggleClass('__flip');
+  $('.banners.__flip').find('.banners_i_side__back').hide().css('left', 0);
+  
+  function mySideChange(front) {
+      if (front) {
+          $(this).parent().find('.banners_i_side__front').show();
+          $(this).parent().find('.banners_i_side__back').hide();
+          
+      } else {
+          $(this).parent().find('.banners_i_side__front').hide();
+          $(this).parent().find('.banners_i_side__back').show();
+      }
+  }
+  
+  var i = true;
+
+  setInterval(function() {
+    if (i) {
+      $('.banners.__flip').find('.banners_i').find('div').stop().rotate3Di('flip', 250, {direction: 'clockwise', sideChange: mySideChange});
+      i = false;  
+    } else {
+      $('.banners.__flip').find('.banners_i').find('div').stop().rotate3Di('unflip', 500, {sideChange: mySideChange});
+      i = true;
+    }
   }, 3000);
 
    

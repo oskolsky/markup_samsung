@@ -155,59 +155,27 @@
   text-align: center;
 }
   .banners_i {
-    display: inline-block;
+    width: 250px;
+    height: 340px;
     margin: 0 2px;
-    vertical-align: top;
+    position: relative;
+    display: inline-block;
   }
-
-.banners_i.__double {
-  width: 250px;
-  height: 340px;
-  position: relative;
-  -webkit-perspective: 5000;
-     -moz-perspective: 5000;
-      -ms-perspective: 5000;
-       -o-perspective: 5000;
-          perspective: 5000;
-}
-.banners_i.__double.__flip .banners_i_flipper {
-  -webkit-transform: rotateY(180deg);
-     -moz-transform: rotateY(180deg);
-      -ms-transform: rotateY(180deg);
-       -o-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-.banners_i_flipper {
-  -webkit-transition: .33s;
-     -moz-transition: .33s;
-      -ms-transition: .33s;
-       -o-transition: .33s;
-          transition: .33s;
-
-  -webkit-transform-style: preserve-3d;
-     -moz-transform-style: preserve-3d;
-      -ms-transform-style: preserve-3d;
-       -o-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-  .banners_i_side {
-    position: absolute;
-    top: 0;
-    left: 0;
-    -webkit-backface-visibility: hidden;
-       -moz-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
-         -o-backface-visibility: hidden;
-            backface-visibility: hidden;
+  .banners_i__original {
+    width: auto;
+    height: auto;
   }
-  .banners_i_side.__1 {
-    z-index: 2;
-  }
-  .banners_i_side.__2 {
-    z-index: 1;
-    -webkit-transform: rotateY(180deg);
-       -moz-transform: rotateY(180deg);
-        -ms-transform: rotateY(180deg);
-         -o-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-  } 
+    .banners_i_side {
+      width: 250px;
+      height: 340px;
+      overflow: hidden;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+    }
+    .banners_i_side__back {
+      left: -999em;
+      background: #999;
+    }
