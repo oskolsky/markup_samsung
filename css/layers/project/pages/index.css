@@ -152,6 +152,7 @@
 
 /* Banners */
 .banners {
+  white-space: nowrap;
   text-align: center;
 }
   .banners_i {
